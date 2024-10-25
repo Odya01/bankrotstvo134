@@ -1,0 +1,15 @@
+@media (max-width: 1800px) {}
+
+@media (max-width: 1000px) {
+  .burger {
+    display: block;
+  }
+
+  .nav__item {
+    display: none;
+  }
+}
+
+@media (max-width: 1800px) {}
+
+@media (max-width: 1800px) {}
