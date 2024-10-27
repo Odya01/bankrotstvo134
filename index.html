@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="media.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header__address">
           <div class="name__org">
@@ -140,81 +140,102 @@
                 >Контакты</a
               >
             </nav>
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label for="burger-checkbox" class="burger"></label>
+
+            <nav class="nav__burger">
+              <a href="index.html" class="nav__list">Home</a>
+              <a href="index.html#feature" class="nav__list">Feature</a>
+              <a href="index.html#about" class="nav__list">About</a>
+              <a href="index.html#video" class="nav__list">Video</a>
+              <a href="index.html#projects" class="nav__list">Projects</a>
+              <a href="index.html#team" class="nav__list">Team</a>
+              <a href="index.html#testimonial" class="nav__list">Testimonial</a>
+              <a href="index.html#contact" class="nav__list">Contact</a>
+            </nav>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="welcome">
-        <div class="container">
-          <div class="welcome__text">
-            <div class="dotted-div">
-              <h1 class="header">
-                Банкротство в Волгограде и Волгоградской области
-              </h1>
-              <ul class="list-reset">
-                <li class="header__list">
+      <section class="welcome visible">
+        <div class="container welcome__container">
+          <div class="welcome__block">
+            <div class="welcome__discount">
+              <div class="dotted-div">
+                <h3 class="text">
+                  Пригласите друга и получите скидку <br />
+                  10 000 рублей!
+                </h3>
+                <p class="text">Время до окончания акции:</p>
+                <div id="countdown" class="countdown">00:00:00</div>
+              </div>
+            </div>
+            <div class="welcome__text">
+              <div class="dotted-div">
+                <h1 class="header">
+                  Банкротство в Волгограде и Волгоградской области
+                </h1>
+                <ul class="list-reset">
+                  <li class="header__list">
+                    <img
+                      src="images/check.svg"
+                      alt="header__check-img"
+                      class="header__check-img"
+                    />
+                    Спишем все кредиты и займы до 0 рублей с гарантией
+                  </li>
+                  <li class="header__list">
+                    <img
+                      src="images/check.svg"
+                      alt="header__check-img"
+                      class="header__check-img"
+                    />
+                    Сохраним всё имущество
+                  </li>
+                  <li class="header__list">
+                    <img
+                      src="images/check.svg"
+                      alt="header__check-img"
+                      class="header__check-img"
+                    />
+                    Стоимость банкротства под ключ от 105000 рублей
+                  </li>
+                  <li class="header__list">
+                    <img
+                      src="images/check.svg"
+                      alt="header__check-img"
+                      class="header__check-img"
+                    />
+                    Сразу удобная рассрочка без переплат
+                  </li>
+                  <li class="header__list">
+                    <img
+                      src="images/check.svg"
+                      alt="header__check-img"
+                      class="header__check-img"
+                    />
+                    Положительный опыт в сфере банкротства более 8 лет
+                  </li>
+                </ul>
+                <a href="#" class="btn">
                   <img
-                    src="images/check.svg"
-                    alt="header__check-img"
-                    class="header__check-img"
+                    src="images/question.svg"
+                    alt="btn__question"
+                    class="btn__question"
                   />
-                  Спишем все кредиты и займы до 0 рублей с гарантией
-                </li>
-                <li class="header__list">
-                  <img
-                    src="images/check.svg"
-                    alt="header__check-img"
-                    class="header__check-img"
-                  />
-                  Сохраним всё имущество
-                </li>
-                <li class="header__list">
-                  <img
-                    src="images/check.svg"
-                    alt="header__check-img"
-                    class="header__check-img"
-                  />
-                  Стоимость банкротства под ключ от 105000 рублей
-                </li>
-                <li class="header__list">
-                  <img
-                    src="images/check.svg"
-                    alt="header__check-img"
-                    class="header__check-img"
-                  />
-                  Сразу удобная рассрочка без переплат
-                </li>
-                <li class="header__list">
-                  <img
-                    src="images/check.svg"
-                    alt="header__check-img"
-                    class="header__check-img"
-                  />
-                  Положительный опыт в сфере банкротства более 8 лет
-                </li>
-              </ul>
-              <a href="#" class="btn">
-                <img
-                  src="images/question.svg"
-                  alt="btn__question"
-                  class="btn__question"
-                />
-                Узнайте, можно ли избавиться от долгов?
-              </a>
+                  Узнайте, можно ли избавиться от долгов?
+                </a>
+              </div>
             </div>
           </div>
+
           <div class="welcome__img"></div>
-          <!-- <form action="#php" class="welcome__form" method="post">
-            <label for="name">Ваше имя</label>
-            <input type="text" name="name" id="name" placeholder="ФИО" />
-            <label for="tel">Ваш телефон</label>
-            <input type="tel" name="tel" id="tel" placeholder="+7" />
-            <label for="textarea">Ваши вопросы</label>
-            <textarea name="textarea" id="textarea"></textarea>
-            <button class="btn" type="submit">Отправить</button>
-          </form> -->
         </div>
       </section>
 
@@ -1476,7 +1497,6 @@
       </div>
     </footer>
 
-    <script src="map.js"></script>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
