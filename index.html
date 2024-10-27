@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title></title>
-    <meta name="description" content="" />
+    <title>
+      Банкротство в Волгограде и Волгоградской области | Банкротство-134
+    </title>
+    <meta
+      name="description"
+      content="Спишем все кредиты и займы до 0 рублей с гарантией Сохраним все имущество Стоимость банкротства под ключ от 105000 Сразу удобная рассрочка без переплат Положительный опыт в сфере банкротства более 8 лет Узнайте, можно ли избавиться от долгов?"
+    />
 
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
 
+    <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
   </head>
@@ -65,15 +73,72 @@
         <div class="header__nav-list">
           <div class="dotted-div">
             <nav class="nav__item">
-              <!-- Выпадающий список -->
-              <a href="error.html" class="nav__list">Услуги</a>
-              <!-- конец -->
-              <a href="error.html" class="nav__list">Цены</a>
-              <a href="error.html" class="nav__list">Примеры выигранных дел</a>
-              <a href="error.html" class="nav__list">Отзывы</a>
-              <a href="error.html" class="nav__list">Вопросы и ответы</a>
-              <a href="error.html" class="nav__list">Статьи</a>
-              <a href="error.html" class="nav__list">Контакты</a>
+              <span class="nav__list navbar__link" id="services-link">
+                <span class="nav__list"
+                  >Услуги
+                  <svg
+                    class="faq__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 4l-8 8h16z"></path>
+                  </svg>
+                </span>
+                <ul class="dropdown">
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Банкротство поручителей</a
+                    >
+                  </li>
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Банкротство пенсионеров</a
+                    >
+                  </li>
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Банкротство с ипотекой</a
+                    >
+                  </li>
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Банкротство физических лиц</a
+                    >
+                  </li>
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Внесудебное банкротство</a
+                    >
+                  </li>
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Банкротство мобилизованных</a
+                    >
+                  </li>
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Банкротство умершего</a
+                    >
+                  </li>
+                  <li>
+                    <a href="error.html" target="_blank"
+                      >Банкротство супругов</a
+                    >
+                  </li>
+                </ul>
+              </span>
+              <a href="error.html" target="_blank" class="nav__list">Цены</a>
+              <a href="error.html" target="_blank" class="nav__list"
+                >Примеры выигранных дел</a
+              >
+              <a href="error.html" target="_blank" class="nav__list">Отзывы</a>
+              <a href="index.html#faq" class="nav__list">Вопросы и ответы</a>
+              <a href="error.html" target="_blank" class="nav__list">Статьи</a>
+              <a href="error.html" target="_blank" class="nav__list"
+                >Контакты</a
+              >
             </nav>
           </div>
         </div>
@@ -232,13 +297,14 @@
 
       <section class="services__cards">
         <div class="container cards__container">
-          <h2 class="heading">Услуги по банкротству</h2>
+          <h2 class="heading cards__heading">Услуги по банкротству</h2>
           <div class="card__block">
             <div class="card">
               <img
                 src="images/card__image1.webp"
-                alt="card__image"
+                alt="Банкротство с ипотекой"
                 class="card__image"
+                loading="lazy"
               />
               <div class="card__content">
                 <h3 class="card__title">Банкротство с ипотекой</h3>
@@ -251,8 +317,9 @@
             <div class="card">
               <img
                 src="images/card__image2.webp"
-                alt="card__image"
+                alt="Банкротство пенсионеров"
                 class="card__image"
+                loading="lazy"
               />
               <div class="card__content">
                 <h3 class="card__title">Банкротство пенсионеров</h3>
@@ -265,8 +332,9 @@
             <div class="card">
               <img
                 src="images/card__image3.webp"
-                alt="card__image"
+                alt="Банкротство мобилизованных"
                 class="card__image"
+                loading="lazy"
               />
               <div class="card__content">
                 <h3 class="card__title">Банкротство мобилизованных</h3>
@@ -279,8 +347,9 @@
             <div class="card">
               <img
                 src="images/card__image4.webp"
-                alt="card__image"
+                alt="Банкротство поручителей"
                 class="card__image"
+                loading="lazy"
               />
               <div class="card__content">
                 <h3 class="card__title">Банкротство поручителей</h3>
@@ -293,8 +362,9 @@
             <div class="card">
               <img
                 src="images/card__image5.webp"
-                alt="card__image"
+                alt="Банкротство супругов"
                 class="card__image"
+                loading="lazy"
               />
               <div class="card__content">
                 <h3 class="card__title">Банкротство супругов</h3>
@@ -307,8 +377,9 @@
             <div class="card">
               <img
                 src="images/card__image6.webp"
-                alt="card__image"
+                alt="Банкротство умершего"
                 class="card__image"
+                loading="lazy"
               />
               <div class="card__content">
                 <h3 class="card__title">Банкротство умершего</h3>
@@ -321,8 +392,9 @@
             <div class="card">
               <img
                 src="images/card__image7.webp"
-                alt="card__image"
+                alt="Внесудебное банкротство"
                 class="card__image"
+                loading="lazy"
               />
               <div class="card__content">
                 <h3 class="card__title">Внесудебное банкротство</h3>
@@ -342,7 +414,11 @@
           <div class="stages__block">
             <div class="stage__item">
               <div class="dotted-div">
-                <h3 class="stage__heading">Разработка плана процедуры</h3>
+                <div class="stage__block-num">
+                  <h3 class="stage__heading">Разработка плана процедуры</h3>
+                  <span class="stage__num">01</span>
+                </div>
+
                 <ul class="list-reset">
                   <li class="stage__list">Консультация</li>
                   <li class="stage__list">Анализ Вашей ситуации</li>
@@ -357,7 +433,11 @@
 
             <div class="stage__item">
               <div class="dotted-div">
-                <h3 class="stage__heading">Процесс признания банкротом</h3>
+                <div class="stage__block-num">
+                  <h3 class="stage__heading">Процесс признания банкротом</h3>
+                  <span class="stage__num">02</span>
+                </div>
+
                 <ul class="list-reset">
                   <li class="stage__list">
                     Проведение процедуры и защита Ваших интересов в суде
@@ -372,7 +452,11 @@
 
             <div class="stage__item">
               <div class="dotted-div">
-                <h3 class="stage__heading">Процедура реализации имущества</h3>
+                <div class="stage__block-num">
+                  <h3 class="stage__heading">Процедура реализации имущества</h3>
+                  <span class="stage__num">03</span>
+                </div>
+
                 <ul class="list-reset">
                   <li class="stage__list">
                     Назначение арбитражного управляющего
@@ -392,9 +476,13 @@
 
             <div class="stage__item">
               <div class="dotted-div">
-                <h3 class="stage__heading">
-                  Завершение банкротства в Волгограде
-                </h3>
+                <div class="stage__block-num">
+                  <h3 class="stage__heading">
+                    Завершение банкротства в Волгограде
+                  </h3>
+                  <span class="stage__num">04</span>
+                </div>
+
                 <ul class="list-reset">
                   <li class="stage__list">
                     По итогу рассмотрения судом отчета финансового управляющего
@@ -406,10 +494,990 @@
           </div>
         </div>
       </section>
+
+      <section class="promotional">
+        <div class="container">
+          <h2 class="heading">
+            Сложности при проведении банкротства в Волгограде самостоятельно
+          </h2>
+          <div class="promotional__block">
+            <div class="promotional__step">
+              <h3 class="promotional__step-title">
+                <span class="arrow-step">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" fill="white" />
+                    <path
+                      d="M6 12H18M18 12L13 7M18 12L13 17"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+
+                Изучить и знать законы
+              </h3>
+              <p class="text promotional__step-text">
+                Изучить и знать Федеральный закон от 26.10.2002 N 127-ФЗ (ред.
+                от 29.12.2017) "О несостоятельности (банкротстве)",
+                Постановление Пленума ВС РФ по вопросу применения закона о
+                банкротстве, судебную практику по данному вопросу.
+              </p>
+            </div>
+            <div class="promotional__step">
+              <h3 class="promotional__step-title">
+                <span class="arrow-step">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" fill="white" />
+                    <path
+                      d="M6 12H18M18 12L13 7M18 12L13 17"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Найти финансового управляющего
+              </h3>
+              <p class="text promotional__step-text">
+                Найти саморегулируемую организацию, из числа членов которой
+                должен быть утвержден финансовый управляющий. Заручиться их
+                поддержкой в вопросе своего банкротства. При самостоятельном
+                поиске велика вероятность того, что ни один из финансовых
+                управляющих не даст свое согласие на участие в процедуре
+                банкротства в Волгограде. Тогда в рассмотрении заявления будет
+                отказано.
+              </p>
+            </div>
+            <div class="promotional__step">
+              <h3 class="promotional__step-title">
+                <span class="arrow-step">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" fill="white" />
+                    <path
+                      d="M6 12H18M18 12L13 7M18 12L13 17"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Самостоятельно подать заявление на банкротство
+              </h3>
+              <p class="text promotional__step-text">
+                Самому составлять заявления, ходатайства. Участвовать лично в
+                арбитражном суде при рассмотрении заявления о признании Вас
+                банкротом. Своевременно и правильно отвечать на запросы
+                финансового управляющего о предоставлении информации,
+                документов, пояснений по делу. Участвовать лично в собраниях
+                кредиторов. В случае оспаривания сделок должника, подавать
+                письменные отзывы в арбитражный суд.
+              </p>
+            </div>
+          </div>
+          <p class="text promotional__info">
+            Множество людей в Волгограде сейчас обременены кредитами, займами
+            или судами. Но происходят ситуации, когда работы нет, случаются
+            проблемы со здоровьем или другие неприятности, которые не дают
+            возможности для оплаты долгов в течение нескольких месяцев, а то и
+            лет. В этом случае не всё потеряно – любому гражданину можно
+            воспользоваться процедурой банкротства, будь то физические лица или
+            ИП, пенсионеры, супруги, мобилизованные, поручители и даже умерший
+            человек. А помочь вам в этом может юридическая фирма Банкротство134,
+            мы оказываем услугу банкротства под ключ.
+          </p>
+          <button class="btn" id="toggleButton">
+            Основания для банкротства
+          </button>
+          <div class="promotional__details hidden" id="details">
+            <p class="text">
+              Федеральный закон Российской Федерации №127 от 26.10.2002 года
+              полностью описывает всю процедуру оформления банкротства
+              физического лица. Она затрагивает все виды задолженностей -
+              кредиты, автокредиты, кредиты на ипотеку, любые займы, налоги,
+              коммунальные платежи и т. д. Стать банкротом любой человек имеет
+              право с октября 2015 года, а с 2020 года это стало возможным без
+              обращения в суд, пройти упрощенный процесс через МФЦ.
+            </p>
+
+            <p class="text"><strong>Условия:</strong></p>
+            <ul class="list-reset">
+              <li class="text">
+                Долги перед кредиторами не возмещены в нужный срок.
+              </li>
+              <li class="text">
+                Недостаточно имущества или зарплаты для погашения долга.
+              </li>
+              <li class="text">
+                Размер долга превышает 500 тыс. рублей, просрочка более 3
+                месяцев.
+              </li>
+              <li class="text">
+                Возможные просрочки по оплате в ближайшее время.
+              </li>
+              <li class="text">
+                Долг от 50 тыс. до 500 тыс. рублей, имущество для покрытия долга
+                отсутствует.
+              </li>
+            </ul>
+
+            <p class="text">
+              Если из финансовой ямы не выбраться, приставы звонят постоянно, а
+              долг растет с большой скоростью – это признаки, что вам стоит
+              начать процедуру банкротства.
+            </p>
+
+            <p class="text">Для оформления банкротства вам потребуются:</p>
+            <ul class="list-reset">
+              <li class="text">Личные документы.</li>
+              <li class="text">Документы, подтверждающие наличие долгов.</li>
+              <li class="text">Бумаги по сделкам за последние 3 года.</li>
+              <li class="text">
+                Документы о финансовой несостоятельности (если есть).
+              </li>
+            </ul>
+
+            <p class="text">
+              Компания Банкротство134 предлагает услугу банкротства под ключ и
+              помощь финансового управляющего. Мы всегда готовы помочь вам
+              освободиться от долгов!
+            </p>
+            <a href="" class="btn">Заказать бесплатную консультацию</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="heading">Плюсы и минусы банкротства в Волгограде</h2>
+          <div class="advantages__content">
+            <div class="advantages__column advantages__pros">
+              <h3 class="advantages__title">Плюсы банкротства</h3>
+              <ul class="advantages__list">
+                <li>
+                  Нарастание долгов приостанавливается — перестают начисляться
+                  штрафы, пени и другие санкции.
+                </li>
+                <li>
+                  Физическое лицо перестает испытывать давление приставов — все
+                  аресты, запреты снимаются.
+                </li>
+                <li>
+                  Гражданин попадает под защиту от коллекторов, прекращаются
+                  звонки на работу, родственникам и друзьям.
+                </li>
+                <li>
+                  Условия погашения долгов могут быть изменены так, чтобы
+                  плательщику было проще их погасить.
+                </li>
+                <li>
+                  Наследники будут защищены от финансовых проблем своего
+                  родственника.
+                </li>
+                <li>Долги, которые невозможно выплатить, списываются.</li>
+                <li>
+                  Сохранение имущества — если есть имущество, которое не хочется
+                  продавать.
+                </li>
+              </ul>
+            </div>
+            <div class="advantages__column advantages__cons">
+              <h3 class="advantages__title">Минусы банкротства</h3>
+              <ul class="advantages__list">
+                <li>
+                  Обязанность уведомлять кредиторов и банки о статусе банкрота.
+                </li>
+                <li>
+                  В течение 5 лет повторно пройти процедуру банкротства будет
+                  невозможно.
+                </li>
+                <li>
+                  Запрещено занимать должность директора любой организации в
+                  течение 3 лет.
+                </li>
+                <li>
+                  Запрет на руководящие должности в МФО и негосударственных
+                  пенсионных фондах на 5 лет.
+                </li>
+                <li>
+                  При банкротстве с реализацией имущества можно потерять его.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container faq__container">
+          <h2 class="heading">Вопросы и ответы по банкротству в Волгограде</h2>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Что дает банкротство?</span>
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Оно дает возможность человеку урегулировать свою задолженность
+                перед кредиторами, не прибегая к объявлению себя банкротом.
+                Кроме того, он может сохранить свое имущество и избежать
+                неблагоприятных последствий, связанных с процедурой реализации
+                его имущества (например, временное ограничение права на выезд за
+                границу).
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Какие последствия ожидают человека после банкротства?</span>
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Какие ограничения налагаются на физическое лицо после того, как
+                оно признало свою финансовую несостоятельность? В течение 3 лет
+                после банкротства человек не может занимать должности главного
+                бухгалтера или генерального директора, а также создавать свою
+                собственную организацию. Если же человек собирается получать
+                кредиты, ему необходимо уведомлять банки о своем банкротстве в
+                течение 5 лет. В остальном же можно не беспокоиться.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Сколько по времени длится банкротство?</span>
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>Как правило, этот срок состоит из двух этапов:</p>
+              <ol>
+                <li>
+                  Признание гражданина банкротом. Может занимать до 6 мес., но
+                  как показывает практика не более 2 мес.
+                </li>
+                <li>
+                  Далее после признания назначается процесс реализации
+                  имущества, которая по решению суда может быть от 4 до 6
+                  месяцев.
+                </li>
+              </ol>
+              <p>
+                Таким образом, на практике, обычно срок этого процесса
+                составляет примерно 6-8 месяцев.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Кто может стать банкротом?</span>
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                По смыслу вышедшего закона процедуру списания долгов через
+                банкротство в Волгограде может пройти абсолютно любой человек, у
+                которого проблемы с выплатами по своим долговым обязательствам.
+                При этом, главным условием, необходимым для реализации
+                возможности осуществления банкротства является ситуация, когда в
+                результате совершения ежемесячных платежей по всем имеющимся
+                долгам, у человека на руках остается сумма денег ниже
+                прожиточного минимума, который установлен законом.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Можно ли работать во время процедуры банкротства?</span>
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Да, человек, находящийся в процессе банкротства (до его
+                окончания), может без проблем продолжать работать на своем
+                текущем месте работы или найти другую работу, поскольку
+                законодательство не запрещает работу в этот период. Однако
+                финансовому управляющему необходимо сообщить о трудоустройстве и
+                предоставить копию трудового договора.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span
+                >Надо ли продолжать выплачивать кредиты в процессе
+                банкротства?</span
+              >
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Если суд постановил, что человек официально банкрот, и нет
+                возможности выдержать выплаты долга — все кредиты будут списаны
+                и выплачивать их не нужно.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span
+                >Возможно ли продавать имущество во время процедуры
+                банкротства?</span
+              >
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                В течение банкротства можно продавать любое имущество должника
+                на аукционах для банкротов: это может быть как недвижимость,
+                автомобили, доли в компаниях или общей собственности, акции, так
+                и мебель, драгоценности или оружие, согласно статье 126 закона о
+                банкротстве. Арбитражный управляющий устанавливает цену на
+                имущество, привлекая для этого оценщиков или исследуя
+                предложения рынка.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Нужно ли платить за банкротство физического лица?</span>
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                В 2020 году введена процедура внесудебного банкротства, которая
+                доступна бесплатно, в отличие от судебного процесса. Это
+                возможно, потому что в случае внесудебного банкротства нет
+                необходимости в оплате услуг финансового управляющего, платы
+                государству или судебных затрат. Другое отличие заключается в
+                долге, который послужил основанием для банкротства — он должен
+                быть не менее 50 тысяч рублей и не более 500 тысяч рублей.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span
+                >Кому переходят долги после банкротства физического лица?</span
+              >
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                После подачи заявления на банкротство, начисление штрафов и
+                процентов наносимых должнику остановится. Кредиторы, такие как
+                банки или коллекторские агентства, не имеют права требовать
+                выплаты долгов и контактировать с заявителем. Все вопросы по
+                долгам будут переданы финансовому управляющему, который должен
+                быть зарегистрирован в СРО на сайте Центробанка РФ.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Почему долги не всегда списываются при банкротстве?</span>
+              <svg
+                class="faq__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 4l-8 8h16z" />
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>
+                В очень редких случаях (менее чем в 2%) долги не могут быть
+                списаны. Причины этого могут быть следующими:
+              </p>
+              <ul>
+                <li>
+                  Банкрот не предоставляет финансовому управляющему необходимые
+                  документы и информацию;
+                </li>
+                <li>Банкрот скрывает свое имущество;</li>
+                <li>
+                  Банкрот привлекается к уголовной ответственности за
+                  мошенничество, незаконное получение кредитов, преднамеренное
+                  фиктивное банкротство или другие преступления;
+                </li>
+                <li>
+                  Банкрот берет кредиты на поддельные документы и не выполняет
+                  обязательства, произведенные по таким долгам.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div class="container pricing__container">
+          <h2 class="heading">Цены на банкротство в Волгограде</h2>
+          <p class="text pricing__text">Примерный расчет стоимости работ</p>
+
+          <div class="pricing__grid">
+            <div class="pricing__item">
+              <div class="dotted-div">
+                <h3 class="pricing__title">
+                  Проверка заемщика на соответствие условиям внесудебного
+                  банкротства
+                </h3>
+                <ul class="pricing__details">
+                  <li>Консультация юриста — Бесплатно</li>
+                  <li>Проверка кредитной истории</li>
+                  <li>
+                    Проверка количества исполнительных производств у судебных
+                    приставов
+                  </li>
+                </ul>
+                <div class="pricing__prices">
+                  <span class="pricing__price">Бесплатно</span>
+                  <a href="#" class="btn">Оформить банкротство</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing__item">
+              <div class="dotted-div">
+                <h3 class="pricing__title">
+                  Подготовка к процедуре БЕСПЛАТНОГО банкротства через МФЦ
+                </h3>
+                <ul class="pricing__details">
+                  <li>Анализ ситуации</li>
+                  <li>Сбор документов</li>
+                  <li>
+                    Составление заявлений и прилагаемых документов на
+                    внесудебное банкротство
+                  </li>
+                  <li>Подача документов в МФЦ Волгограда</li>
+                </ul>
+                <div class="pricing__prices">
+                  <span class="pricing__old-price">9000 руб</span>
+                  <span class="pricing__price">5000 руб</span>
+                  <a href="#" class="btn">Оформить банкротство</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing__item">
+              <div class="dotted-div">
+                <h3 class="pricing__title">Услуга "Финансовый управляющий"</h3>
+                <ul class="pricing__details">
+                  <li>
+                    Выбор саморегулирующей организации СРО арбитражных
+                    управляющих
+                  </li>
+                  <li>Предоставление кандидатуры финансового управляющего</li>
+                  <li>
+                    Проведение финансовым управляющим процедуры банкротства
+                  </li>
+                </ul>
+                <div class="pricing__prices">
+                  <span class="pricing__old-price">32000 руб</span>
+                  <span class="pricing__price">20000 руб</span>
+                  <a href="#" class="btn">Оформить банкротство</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing__item">
+              <div class="dotted-div">
+                <h3 class="pricing__title">Юридическое сопровождение</h3>
+                <ul class="pricing__details">
+                  <li>Анализ ситуации клиента</li>
+                  <li>Полный сбор документов</li>
+                  <li>
+                    Составление заявления и прилагаемых документов для суда
+                  </li>
+                  <li>Подача заявления в суд</li>
+                  <li>
+                    Представление интересов клиента в суде Волгограда в связи с
+                    признанием банкротом
+                  </li>
+                </ul>
+                <div class="pricing__prices">
+                  <span class="pricing__old-price">76000 руб</span>
+                  <span class="pricing__price">50000 руб</span>
+                  <a href="#" class="btn">Оформить банкротство</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing__item">
+              <div class="dotted-div">
+                <h3 class="pricing__title">
+                  Судебное банкротство граждан «под ключ»
+                </h3>
+                <ul class="pricing__details">
+                  <li>Анализ долгов</li>
+                  <li>Выбор стратегии сохранения имущества клиента</li>
+                  <li>
+                    Сохранение единственного жилья, имущества, зарплаты, пенсии
+                  </li>
+                  <li>Общение с коллекторами</li>
+                  <li>
+                    Включение всех расходов (депозит, госпошлина, публикации,
+                    справки, доверенности, почтовые расходы, просрочки) в
+                    договор
+                  </li>
+                  <li>Предоставление кандидатуры финансового управляющего</li>
+                  <li>Составление заявления со всеми приложениями для суда</li>
+                  <li>Подача в суд заявления о банкротстве</li>
+                  <li>Представление интересов клиента в суде в Волгограде</li>
+                  <li>
+                    Проведение финансовым управляющим процедуры банкротства
+                    клиента
+                  </li>
+                  <li>
+                    Представление интересов клиента в суде при проведении
+                    процедуры
+                  </li>
+                </ul>
+                <div class="pricing__prices">
+                  <span class="pricing__old-price">140000 руб</span>
+                  <span class="pricing__price">110000 руб</span>
+                  <a href="#" class="btn">Оформить банкротство</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing__item">
+              <div class="dotted-div">
+                <h3 class="pricing__title">Сбор документов</h3>
+                <ul class="pricing__details">
+                  <li>
+                    Сбор всех необходимых справок и договоров в банках и МФО
+                  </li>
+                  <li>Помощь в получении сведений в регистрирующих органах</li>
+                  <li>
+                    Получение сведений из службы судебных приставов и судебных
+                    инстанций
+                  </li>
+                </ul>
+                <div class="pricing__prices">
+                  <span class="pricing__old-price">15000 руб</span>
+                  <span class="pricing__price">10000 руб</span>
+                  <a href="#" class="btn">Оформить банкротство</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-carousel">
+        <div class="container">
+          <h2 class="heading">Примеры дел по банкротству</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/case-img/a12-41413-2017_20180809_opredelenie-1.png"
+                  alt="Кейс 1"
+                  class="case-carousel__image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/case-img/a12-41413-2017_20180809_opredelenie-1.png"
+                  alt="Кейс 1"
+                  class="case-carousel__image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/case-img/a12-41413-2017_20180809_opredelenie-1.png"
+                  alt="Кейс 1"
+                  class="case-carousel__image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/case-img/a12-41413-2017_20180809_opredelenie-1.png"
+                  alt="Кейс 1"
+                  class="case-carousel__image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/case-img/a12-41413-2017_20180809_opredelenie-1.png"
+                  alt="Кейс 1"
+                  class="case-carousel__image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+
+          <a href="" class="btn case__btn"
+            >Все успешно выйгранные дела по банкротству</a
+          >
+        </div>
+      </section>
+
+      <section class="blog-preview">
+        <div class="container">
+          <h2 class="heading">Статьи по банкротству</h2>
+
+          <div class="blog-preview__grid">
+            <a href="#" class="blog-preview__item">
+              <img
+                src="images/blog-preview__image1.webp"
+                alt="Как общаться с коллекторами"
+                class="blog-preview__image"
+                loading="lazy"
+              />
+              <div class="blog-preview__content">
+                <h3 class="blog-preview__title">
+                  Как общаться с коллекторами правильно и по закону
+                </h3>
+                <p class="blog-preview__date">
+                  <span class="blog-preview__icon">📅</span> 19.10.2023
+                </p>
+                <p class="blog-preview__text">
+                  Общение с коллекторами чаще всего неприятно и вызывает стресс.
+                  Однако с правильными подходами и стратегиями, вы можете
+                  справиться с этой ситуацией более...
+                </p>
+              </div>
+            </a>
+
+            <a href="#" class="blog-preview__item">
+              <img
+                src="images/blog-preview__image2.webp"
+                alt="Как оформить банкротство"
+                class="blog-preview__image"
+                loading="lazy"
+              />
+              <div class="blog-preview__content">
+                <h3 class="blog-preview__title">
+                  Как оформить банкротство в 2023 году: подробная пошаговая
+                  инструкция
+                </h3>
+                <p class="blog-preview__date">
+                  <span class="blog-preview__icon">📅</span> 30.05.2023
+                </p>
+                <p class="blog-preview__text">
+                  Банкротство физического лица стало одним из наиболее
+                  востребованных способов решения финансовых проблем...
+                </p>
+              </div>
+            </a>
+
+            <a href="#" class="blog-preview__item">
+              <img
+                src="images/blog-preview__image3.webp"
+                alt="Последствия банкротства для физических лиц"
+                class="blog-preview__image"
+                loading="lazy"
+              />
+              <div class="blog-preview__content">
+                <h3 class="blog-preview__title">
+                  Последствия банкротства для физических лиц
+                </h3>
+                <p class="blog-preview__date">
+                  <span class="blog-preview__icon">📅</span> 24.05.2023
+                </p>
+                <p class="blog-preview__text">
+                  Последствия банкротства для физических лиц признание кредитной
+                  несостоятельности...
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__links">
+            <ul>
+              <li><a href="#">Банкротство поручителей</a></li>
+              <li><a href="#">Банкротство пенсионеров</a></li>
+              <li><a href="#">Банкротство с ипотекой</a></li>
+              <li><a href="#">Банкротство физических лиц в Волгограде</a></li>
+              <li><a href="#">Внесудебное банкротство</a></li>
+              <li><a href="#">Отзывы по банкротству в Волгограде</a></li>
+              <li><a href="#">Примеры выигранных дел по банкротству</a></li>
+              <li><a href="#">Услуги по банкротству в Волгограде</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__company">
+            <h3>Юридическая компания "Банкротство-134"</h3>
+            <img
+              src="images/footer__img.jpg"
+              alt="Руководитель"
+              class="footer__image"
+              loading="lazy"
+            />
+            <p>Руководитель: Александр Николаевич Наумов, юрист</p>
+            <p>ОГРНИП: 319344300081151, ИНН: 344404444443</p>
+            <p>Дата присвоения ОГРНИП: 01.08.2019</p>
+            <h4>Мы работаем по Волгограду и Волгоградской области:</h4>
+            <p>
+              <svg
+                viewBox="0 0 24 24"
+                fill="transparent"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g clip-path="url(#clip0_15_529)">
+                    <rect width="24" height="24" fill="transparent"></rect>
+                    <path
+                      d="M2.01394 6.87134C1.34749 10.0618 3.85967 13.8597 7.01471 17.0147C10.1698 20.1698 13.9676 22.682 17.1581 22.0155C19.782 21.4674 21.1215 20.0697 21.8754 18.8788C22.1355 18.4678 22.0042 17.9344 21.6143 17.6436L17.9224 14.8897C17.5243 14.5928 16.9685 14.633 16.6174 14.9842L14.6577 16.9438C14.6577 16.9438 12.7529 16.3246 10.2288 13.8006C7.70482 11.2766 7.08564 9.37175 7.08564 9.37175L9.04529 7.4121C9.39648 7.06091 9.43671 6.5052 9.13975 6.10709L6.38585 2.4151C6.09505 2.02525 5.56163 1.89395 5.15068 2.15407C3.9597 2.90794 2.56203 4.24747 2.01394 6.87134Z"
+                      stroke="#ffffff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_15_529">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </g>
+              </svg>
+              <strong>Телефон:</strong> +7 (905) 330-90-95
+            </p>
+            <p>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g clip-path="url(#clip0_15_17)">
+                    <rect width="24" height="24" fill="transparent"></rect>
+                    <path
+                      d="M3 17.5V6.5C3 5.94772 3.44772 5.5 4 5.5H12H20C20.5523 5.5 21 5.94772 21 6.5V17.5C21 18.0523 20.5523 18.5 20 18.5H4C3.44772 18.5 3 18.0523 3 17.5Z"
+                      stroke="#ffffff"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M3 6L12 12L21 6"
+                      stroke="#ffffff"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_15_17">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </g>
+              </svg>
+              <strong>Email:</strong> bankrot134@mail.ru
+            </p>
+            <p>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <rect width="24" height="24" fill="transparent"></rect>
+                  <path
+                    d="M14.1214 14.1213L16.5165 8.13347C16.6798 7.72532 16.2747 7.32028 15.8666 7.48354L9.87872 9.87868M14.1214 14.1213L8.13351 16.5165C7.72536 16.6797 7.32032 16.2747 7.48358 15.8665L9.87872 9.87868M14.1214 14.1213L9.87872 9.87868"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="9"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></circle>
+                </g>
+              </svg>
+              <strong>Адрес:</strong> г. Волгоград, ул. Академическая, д. 14/1,
+              оф. 508
+            </p>
+            <p>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <rect width="24" height="24" fill="transparent"></rect>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="9"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></circle>
+                  <path
+                    d="M12 18V12V6"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <strong>Режим работы:</strong> по будням с 09:00 до 18:00
+            </p>
+          </div>
+
+          <div class="footer__map-placeholder">
+            <h4>Как нас найти на карте:</h4>
+            <div class="footer__map" id="map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3Ac3d780496995086364bf611f680aec72d2f49a2af429598e9f00e5e8b2787134"
+                frameborder="0"
+                allowfullscreen="true"
+                width="100%"
+                height="300px"
+                style="display: block"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>
+            Банкротство134 | Разработано
+            <a href="https://github.com" target="_blank">Odya01</a>
+          </p>
+        </div>
+      </div>
     </footer>
+
+    <script src="map.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
