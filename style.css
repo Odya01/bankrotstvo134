@@ -2,6 +2,7 @@
   font-family: "NunitoSans";
   src: url(fonts/NunitoSans_10pt_SemiExpanded-Regular.ttf);
 }
+
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,7 @@ html {
   scroll-behavior: smooth;
   font-family: "NunitoSans";
 }
+
 button {
   font-family: "NunitoSans";
 }
@@ -91,6 +93,7 @@ section {
 .active {
   display: flex;
 }
+
 .hiddenSec {
   opacity: 0;
   transform: translateY(30px);
@@ -101,6 +104,7 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
+
 .overflow {
   overflow: hidden;
 }
@@ -146,14 +150,14 @@ section {
   transition: bottom 0.3s 0.15s, transform 0.3s;
 }
 
-.burger-checkbox:checked + .burger::before {
+.burger-checkbox:checked+.burger::before {
   top: 12px;
   transform: rotate(45deg);
   box-shadow: 0 6px 0 transparent;
   transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
 }
 
-.burger-checkbox:checked + .burger::after {
+.burger-checkbox:checked+.burger::after {
   bottom: 9px;
   transform: rotate(-45deg);
   transition: bottom 0.3s, transform 0.3s 0.15s;
@@ -270,6 +274,7 @@ header {
 .nav__list:hover {
   color: var(--blue);
 }
+
 .navbar__link .nav__list {
   position: relative;
   display: flex;
@@ -277,11 +282,13 @@ header {
   align-items: center;
   gap: 5px;
 }
+
 .nav__list .faq__icon {
   width: 20px;
   height: 20px;
   transform: rotate(180deg);
 }
+
 .dropdown {
   display: none;
   position: absolute;
@@ -333,6 +340,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .welcome__block {
   display: flex;
   flex-direction: column;
@@ -341,6 +349,7 @@ header {
   width: 40%;
   margin-left: 100px;
 }
+
 .welcome__discount {
   /* display: none; */
   background-color: var(--wh);
@@ -348,6 +357,7 @@ header {
   padding: 10px;
   width: 100%;
 }
+
 .welcome__discount .dotted-div {
   display: flex;
   flex-direction: column;
@@ -355,11 +365,13 @@ header {
   text-align: center;
   padding: 10px;
 }
+
 .countdown {
   font-weight: bold;
   color: var(--red);
   font-size: 26px;
 }
+
 .welcome__text {
   background-color: var(--wh);
   border-radius: 15px;
@@ -431,6 +443,7 @@ header {
   color: var(--wh);
   padding: 10px;
   font-size: 17px;
+  text-align: center;
 
   display: flex;
   flex-direction: row;
@@ -472,6 +485,7 @@ header {
   padding: 10px 20px;
   font-size: 18px;
 }
+
 #textarea {
   width: 100%;
   height: 120px;
@@ -490,14 +504,16 @@ header {
 .why {
   background-color: #f1f1f1;
 }
+
 .heading {
   color: var(--black);
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 }
+
 .why__icon {
   width: 90px;
   height: 90px;
@@ -506,6 +522,7 @@ header {
   border: 2px dotted var(--black);
   transition: 0.3s ease;
 }
+
 .why__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -520,6 +537,7 @@ header {
   padding: 20px;
   border-radius: 10px;
 }
+
 .why__item:hover .why__icon {
   border-color: var(--blue);
 }
@@ -541,14 +559,17 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/services__img.webp) center/cover no-repeat;
 }
+
 .cards__heading {
   color: var(--wh);
 }
+
 .card__block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
+
 .card {
   background-color: var(--wh);
   border-radius: 10px;
@@ -556,9 +577,11 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .card:hover .card__image {
   transform: scale(1.03);
 }
+
 .card__image {
   width: 100%;
   height: 180px;
@@ -610,12 +633,14 @@ header {
 .stages {
   background-color: #f3f3f3;
 }
+
 .stages__block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
+
 .stage__item {
   background-color: var(--wh);
   border-radius: 15px;
@@ -633,6 +658,7 @@ header {
 
   margin-bottom: 20px;
 }
+
 .stage__item .dotted-div {
   display: flex;
   flex-direction: column;
@@ -651,9 +677,11 @@ header {
   padding-left: 20px;
   list-style-type: circle;
 }
+
 .stage__list {
   font-size: 18px;
 }
+
 .stage__num {
   position: absolute;
   right: 30px;
@@ -662,12 +690,15 @@ header {
   font-size: 40px;
   transition: 0.3s ease;
 }
+
 .stage__item:hover .stage__num {
   font-size: 50px;
 }
+
 .stage__item:hover {
   background-color: var(--blue2);
 }
+
 .stage__item:hover .dotted-div {
   border-color: var(--wh);
 }
@@ -679,6 +710,7 @@ header {
   margin-bottom: 30px;
   gap: 20px;
 }
+
 .promotional__step {
   display: flex;
   flex-direction: column;
@@ -687,6 +719,7 @@ header {
   border-radius: 10px;
   padding: 20px;
 }
+
 .promotional__step-title {
   margin: 0;
   margin-bottom: 20px;
@@ -698,27 +731,33 @@ header {
   align-items: center;
   gap: 5px;
 }
+
 .arrow-step {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .arrow-step svg {
   width: 30px;
   height: 30px;
 }
+
 .promotional__step-text {
   margin: 0;
   font-size: 18px;
 }
+
 .text {
   font-size: 20px;
   margin: 0;
   margin-bottom: 10px;
 }
+
 .promotional__details {
   margin-top: 40px;
 }
+
 .promotional__toggle {
   background-color: var(--primary);
   color: #fff;
@@ -746,30 +785,37 @@ header {
   overflow: hidden;
   transition: max-height 0.4s ease-out, padding 0.4s ease-out;
 }
+
 .promotional__details .btn {
   margin-top: 30px;
 }
+
 .promotional__info {
   margin-bottom: 40px;
 }
+
 .promotional__details.open {
   max-height: 1000px;
   display: flex;
   padding: 30px;
   border: 2px dotted var(--blue);
 }
+
 .promotional__step-text {
   margin: 0;
 }
+
 #toggleButton {
   margin: 0 auto;
   padding: 20px;
   font-size: 20px;
   font-family: "NunitoSans";
 }
+
 .hidden {
   display: none;
 }
+
 .promotional__details .list-reset {
   padding-left: 20px;
   list-style-type: circle;
@@ -876,9 +922,11 @@ header {
   overflow: hidden;
   transition: 0.3s ease;
 }
+
 .faq__answer p {
   margin: 0;
 }
+
 .faq__answer.open {
   max-height: 200px;
   padding-top: 10px;
@@ -889,12 +937,15 @@ header {
   padding: 40px 0;
   background: linear-gradient(to bottom, #f9f9f9, #2f6ea2);
 }
+
 .pricing__container {
   text-align: center;
 }
+
 .pricing__text {
   margin-bottom: 30px;
 }
+
 .pricing__grid {
   display: flex;
   flex-direction: column;
@@ -907,12 +958,14 @@ header {
   padding: 10px;
   text-align: center;
 }
+
 .pricing__item .dotted-div {
   display: flex;
   flex-direction: row;
   gap: 30px;
   justify-content: center;
 }
+
 .pricing__title {
   width: 30%;
   font-size: 22px;
@@ -936,6 +989,7 @@ header {
 .pricing__details li {
   font-size: 16px;
 }
+
 .pricing__details li:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -949,6 +1003,7 @@ header {
   margin: 0;
   height: 100%;
 }
+
 .pricing__prices .btn {
   margin-top: auto;
 }
@@ -974,21 +1029,25 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
 .swiper {
   width: 100%;
   height: auto;
 }
+
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .case-carousel__image {
   width: 275px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px dotted var(--beige);
 }
+
 .swiper-button-prev {
   left: 10px;
 }
@@ -1003,6 +1062,7 @@ header {
   margin-top: 20px;
   text-align: center;
 }
+
 .case__btn {
   margin-top: 40px;
 }
@@ -1121,18 +1181,22 @@ header {
   margin: 0;
   margin-bottom: 20px;
 }
+
 .footer__company h4 {
   margin-top: 30px;
 }
+
 .footer__company p {
   display: flex;
   align-items: center;
   margin: 0;
   gap: 5px;
 }
+
 .footer__company p:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .footer__image {
   width: 100%;
   max-width: 260px;
@@ -1143,6 +1207,7 @@ header {
 .footer__map-placeholder {
   flex: 1 1 25%;
 }
+
 .footer__icon {
   width: 24px;
   height: 24px;
@@ -1165,11 +1230,13 @@ header {
   text-align: center;
   color: #bbb;
 }
+
 .footer__bottom p {
   margin: 0;
   color: #bbb;
   font-size: 10px;
 }
+
 .footer__bottom a {
   color: #bbb;
   text-decoration: underline;

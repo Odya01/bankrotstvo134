@@ -2,9 +2,11 @@
   .nav__list {
     font-size: 18px;
   }
+
   .nav__item {
     gap: 10px;
   }
+
   .welcome__img {
     left: 75%;
   }
@@ -18,10 +20,12 @@
   .nav__item {
     display: none;
   }
+
   .header__address {
     flex-direction: column;
     gap: 30px;
   }
+
   .header .container {
     flex-direction: row;
     display: flex;
@@ -29,19 +33,23 @@
     justify-content: space-between;
     gap: 30px;
   }
+
   .welcome {
     padding-bottom: 0;
   }
+
   .welcome__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .welcome__block {
     width: 100%;
     max-width: 500px;
     margin: 0;
   }
+
   .welcome__img {
     position: relative;
     display: block;
@@ -51,26 +59,32 @@
     bottom: auto;
     transform: none;
   }
+
   .stages__block {
     flex-direction: column;
     align-items: center;
   }
+
   .stage__item {
     width: 100%;
   }
+
   .pricing__item .dotted-div {
     flex-direction: column;
     align-items: center;
   }
+
   .pricing__title,
   .pricing__prices,
   .pricing__details {
     width: 100%;
   }
+
   .blog-preview__grid {
     flex-direction: column;
     align-items: center;
   }
+
   .blog-preview__item {
     width: 100%;
     max-width: 500px;
@@ -81,9 +95,11 @@
   .advantages__content {
     flex-direction: column;
   }
+
   .faq__container {
     margin: 0 10px;
   }
+
   .footer__content {
     flex-direction: column;
   }
@@ -93,10 +109,55 @@
   .header .container {
     flex-direction: column-reverse;
   }
+
   .header__nav-list {
     margin-left: auto;
   }
+
   .welcome {
-    padding-top: 270px;
+    padding-top: 300px;
+  }
+
+  .header__link-address {
+    font-size: 26px;
+  }
+
+  .header__map-address {
+    font-size: 14px;
+  }
+
+  .why__grid,
+  .card__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    font-size: 26px;
+  }
+
+  .dotted-div {
+    padding: 20px;
+  }
+
+  .header__list {
+    font-size: 16px;
+  }
+
+  .welcome__img {
+    width: 400px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .stage__item .dotted-div {
+    padding-right: 75px;
+  }
+
+  #toggleButton {
+    padding: 15px;
+    font-size: 17px;
   }
 }
