@@ -14,7 +14,7 @@
 
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
 
-    <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script> -->
 
     <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
@@ -33,7 +33,10 @@
             </p>
           </div>
           <div class="org__links">
-            <a href="#" class="header__link-social">
+            <a
+              href="https://vk.com/bankrotstvo_134"
+              class="header__link-social"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="VK"
@@ -47,7 +50,7 @@
                 />
               </svg>
             </a>
-            <a href="#" class="header__link-social">
+            <!-- <a href="#" class="header__link-social">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="Telegram"
@@ -65,8 +68,10 @@
                   d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"
                 />
               </svg>
-            </a>
-            <a href="tel:+" class="header__tel-link">+7 (905) 330 90 95</a>
+            </a> -->
+            <a href="tel:+7 (905) 330 90 95" class="header__tel-link"
+              >+7 (905) 330 90 95</a
+            >
           </div>
         </div>
         <!--  -->
@@ -129,16 +134,19 @@
                   </li>
                 </ul>
               </span>
-              <a href="error.html" target="_blank" class="nav__list">Цены</a>
+              <a href="price.html" target="_blank" class="nav__list">Цены</a>
               <a href="error.html" target="_blank" class="nav__list"
                 >Примеры выигранных дел</a
               >
-              <a href="error.html" target="_blank" class="nav__list">Отзывы</a>
+              <a
+                href="https://yandex.ru/maps/org/bankrotstvo_134/112995170779/reviews/?ll=44.496786%2C48.696718&utm_content=org-name&utm_medium=reviews&utm_source=maps-reviews-widget&z=14"
+                target="_blank"
+                class="nav__list"
+                >Отзывы</a
+              >
               <a href="index.html#faq" class="nav__list">Вопросы и ответы</a>
               <a href="error.html" target="_blank" class="nav__list">Статьи</a>
-              <a href="error.html" target="_blank" class="nav__list"
-                >Контакты</a
-              >
+              <a href="#footer" class="nav__list">Контакты</a>
             </nav>
             <input
               type="checkbox"
@@ -148,14 +156,18 @@
             <label for="burger-checkbox" class="burger"></label>
 
             <nav class="nav__burger">
-              <a href="index.html" class="nav__list">Home</a>
-              <a href="index.html#feature" class="nav__list">Feature</a>
-              <a href="index.html#about" class="nav__list">About</a>
-              <a href="index.html#video" class="nav__list">Video</a>
-              <a href="index.html#projects" class="nav__list">Projects</a>
-              <a href="index.html#team" class="nav__list">Team</a>
-              <a href="index.html#testimonial" class="nav__list">Testimonial</a>
-              <a href="index.html#contact" class="nav__list">Contact</a>
+              <a href="#footer" class="nav__list">Услуги</a>
+              <a href="price.html" class="nav__list">Цены</a>
+              <a href="error.html" class="nav__list">Примеры выигранных дел</a>
+              <a
+                href="https://yandex.ru/maps/org/bankrotstvo_134/112995170779/reviews/?ll=44.496786%2C48.696718&utm_content=org-name&utm_medium=reviews&utm_source=maps-reviews-widget&z=14"
+                target="_blank"
+                class="nav__list"
+                >Отзывы</a
+              >
+              <a href="index.html#faq" class="nav__list">Вопросы и ответы</a>
+              <a href="error.html" class="nav__list">Статьи</a>
+              <a href="#footer" class="nav__list">Контакты</a>
             </nav>
           </div>
         </div>
@@ -1234,7 +1246,7 @@
         </div>
       </section>
 
-      <section class="blog-preview">
+      <section class="blog-preview" id="blog-preview">
         <div class="container">
           <h2 class="heading">Статьи по банкротству</h2>
 
@@ -1332,7 +1344,7 @@
               class="footer__image"
               loading="lazy"
             />
-            <p>Руководитель: Александр Николаевич Наумов, юрист</p>
+            <p id="footer">Руководитель: Александр Николаевич Наумов, юрист</p>
             <p>ОГРНИП: 319344300081151, ИНН: 344404444443</p>
             <p>Дата присвоения ОГРНИП: 01.08.2019</p>
             <h4>Мы работаем по Волгограду и Волгоградской области:</h4>
@@ -1497,6 +1509,7 @@
       </div>
     </footer>
 
+    <script src="timer.js"></script>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>

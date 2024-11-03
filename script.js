@@ -89,10 +89,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // timer
 document.addEventListener("DOMContentLoaded", () => {
   // 31 декабря 2023 года, 23:59:59
-  const countdownElement = document.getElementById("countdown");
+  const countdownElement = document.querySelector(".countdown");
   const discountBlock = document.querySelector(".welcome__discount");
   const endTime = new Date("December 31, 2024 23:59:59").getTime();
   function updateCountdown() {
+    if (!countdownElement) return;
     const now = new Date().getTime();
     const timeLeft = endTime - now;
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
