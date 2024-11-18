@@ -14,6 +14,13 @@
 
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
 
+    <!-- Viewer.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+
     <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script> -->
 
     <link rel="stylesheet" href="swiper-bundle.min.css" />
@@ -178,30 +185,19 @@
       <section class="welcome_breadcrumbs">
         <div class="container welcome_breadcrumbs__container">
           <h1 class="heading welcome_breadcrumbs__heading">
-            Отзывы о компании "Банкротство-134" в Волгограде
+            Примеры дел "Банкротство-134"
           </h1>
           <nav class="breadcrumbs">
             <a href="index.html" class="breadcrumbs__link">Главная</a>
             <span>&gt;</span>
-            <span class="breadcrumbs__current">Отзывы</span>
+            <span class="breadcrumbs__current">Примеры дел</span>
           </nav>
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="case__section">
         <div class="container">
-          <iframe
-            style="
-              width: 100%;
-              height: 900px;
-              border: 1px solid #e6e6e6;
-              border-radius: 8px;
-              box-sizing: border-box;
-            "
-            src="https://yandex.ru/maps-reviews-widget/112995170779?comments"
-            width="auto"
-            height="100%"
-          ></iframe>
+          <div class="case__grid"></div>
         </div>
       </section>
     </main>

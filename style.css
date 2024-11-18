@@ -73,7 +73,8 @@ section {
 .nav__burger {
   top: 0;
   right: 0;
-  padding: 80px;
+  padding: 50px;
+  padding-top: 80px;
   width: 100%;
   position: absolute;
   z-index: 99;
@@ -680,7 +681,6 @@ header {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding-right: 100px;
   transition: 0.3s ease;
 }
 
@@ -1209,7 +1209,7 @@ header {
   margin-top: 30px;
 }
 
-.footer__company p {
+.footer__links {
   display: flex;
   align-items: center;
   color: #ddd;
@@ -1334,4 +1334,78 @@ header {
 
 #floating-button:hover {
   background-color: #ff7961;
+}
+
+.header__link_hover {
+  border-bottom: none;
+}
+
+.header__link_hover:hover {
+  color: var(--beige);
+}
+
+.case__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.case__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px dotted var(--beige2);
+  transition: .3s ease;
+}
+
+.case__item:hover {
+  border-color: var(--blue);
+}
+
+.case__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.viewer__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.case-carousel__image {
+  height: 350px;
+}
+
+.case__heading {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.case__buttons {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.case__buttons .btn {
+  font-size: 17px;
+  padding: 10px;
+}
+
+.case__buttons .btn:first-child {
+  background-color: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.case__buttons .btn:hover {
+  transform: translateY(2px);
 }

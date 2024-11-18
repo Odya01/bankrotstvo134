@@ -152,7 +152,7 @@
     font-size: 24px;
   }
 
-  .stage__item .dotted-div {
+  .stage__item .stage__heading {
     padding-right: 75px;
   }
 
@@ -169,5 +169,15 @@
 @media (max-width: 400px) {
   .header__tel-link {
     font-size: 24px;
+  }
+
+  .case__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__list {
+    padding: 0;
   }
 }
