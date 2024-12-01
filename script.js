@@ -316,25 +316,27 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cases) {
     const casesContainer = document.querySelector(".case__grid");
 
-    cases.forEach(({ caseNumber, pdfName, caseLink }) => {
-      const caseElement = document.createElement("div");
-      caseElement.classList.add("case__item");
+    if (casesContainer) {
+      cases.forEach(({ caseNumber, pdfName, caseLink }) => {
+        const caseElement = document.createElement("div");
+        caseElement.classList.add("case__item");
 
-      caseElement.innerHTML = `
-            <img src="files/case_example/webp/${caseNumber}.webp" alt="${caseNumber}" class="viewer__image">
-            <div class="case__heading">
-            Дело о банкротстве:
-            <br>
-            ${caseNumber}</div>
-            <div class="case__buttons">
-                <a href="${caseLink}" target="_blank" class="btn">Решение суда</a>
-                <a href="files/case_example/pdf_files/${pdfName}.pdf" target="_blank" class="btn">Посмотреть дело</a>
-              
-            </div>
-        `;
+        caseElement.innerHTML = `
+              <img src="files/case_example/webp/${caseNumber}.webp" alt="${caseNumber}" class="viewer__image">
+              <div class="case__heading">
+              Дело о банкротстве:
+              <br>
+              ${caseNumber}</div>
+              <div class="case__buttons">
+                  <a href="${caseLink}" target="_blank" class="btn">Решение суда</a>
+                  <a href="files/case_example/pdf_files/${pdfName}.pdf" target="_blank" class="btn">Посмотреть дело</a>
+                
+              </div>
+          `;
 
-      casesContainer.appendChild(caseElement);
-    });
+        casesContainer.appendChild(caseElement);
+      });
+    }
   }
 });
 
