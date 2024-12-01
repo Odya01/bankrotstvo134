@@ -259,8 +259,12 @@ header {
   transition: color 0.3s ease;
 }
 
-.header__link-address:hover {
+.name-index .header__link-address:hover {
   color: var(--blue);
+}
+
+.header__link-address:hover {
+  color: var(--beige);
 }
 
 .header__map-address {
