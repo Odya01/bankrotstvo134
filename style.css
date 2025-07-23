@@ -1500,3 +1500,13 @@ table.cinereousTable tbody td {
   height: 2px;
   background-color: var(--beige);
 }
+
+/*  */
+/* reviews page */
+.reviews__iframe {
+  width: 600px;
+  height: 900px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
