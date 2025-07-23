@@ -68,6 +68,7 @@ section {
 .burger {
   display: none;
   height: 100%;
+
 }
 
 .nav__burger {
@@ -212,14 +213,13 @@ header {
 .header__link-social svg {
   width: 30px;
   height: 30px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 5px;
   transition: .3s ease;
 }
 
 .header__link-social svg:hover {
   border-color: var(--beige2);
-
 }
 
 .name__org {
@@ -246,7 +246,7 @@ header {
 }
 
 .header__tel-link:hover {
-  color: var(--blue);
+  color: var(--beige);
 }
 
 .header__link-address {
@@ -254,14 +254,11 @@ header {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--beige);
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
 
-.name-index .header__link-address:hover {
-  color: var(--blue);
-}
 
 .header__link-address:hover {
   color: var(--beige);
@@ -271,6 +268,12 @@ header {
   margin: 0;
   font-size: 16px;
   color: var(--wh);
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.header__map-address:hover {
+  color: var(--beige);
 }
 
 .nav__item {
@@ -1496,8 +1499,4 @@ table.cinereousTable tbody td {
   width: 100%;
   height: 2px;
   background-color: var(--beige);
-}
-
-.services__text .header__tel-link {
-  color: var(--beige);
 }

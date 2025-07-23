@@ -115,10 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
     countdownElement.innerHTML = `${days}д ${hours
       .toString()
       .padStart(2, "0")}ч ${minutes.toString().padStart(2, "0")}м`;
-    if (timeLeft < 0) {
-      clearInterval(countdownInterval);
-      discountBlock.style.display = "none";
-    }
+    // if (timeLeft < 0) {
+    //   clearInterval(countdownInterval);
+    //   discountBlock.style.display = "none";
+    // }
   }
 
   const countdownInterval = setInterval(updateCountdown, 1000);
