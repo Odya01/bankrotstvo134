@@ -1179,8 +1179,9 @@ header {
 }
 
 .footer__links {
-  flex: 1 1 25%;
+  flex: 1 1 33%;
 }
+
 
 .footer__links ul {
   list-style: none;
@@ -1201,6 +1202,7 @@ header {
 .footer__links a:hover {
   color: #fff;
 }
+
 
 .footer__company {
   flex: 1 1 35%;
