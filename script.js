@@ -97,33 +97,87 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// timer
+// modal discount
 document.addEventListener("DOMContentLoaded", () => {
-  // 31 декабря 2023 года, 23:59:59
-  const countdownElement = document.querySelector(".countdown");
-  const discountBlock = document.querySelector(".welcome__discount");
-  const endTime = new Date("December 31, 2024 23:59:59").getTime();
-  function updateCountdown() {
-    if (!countdownElement) return;
-    const now = new Date().getTime();
-    const timeLeft = endTime - now;
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    countdownElement.innerHTML = `${days}д ${hours
-      .toString()
-      .padStart(2, "0")}ч ${minutes.toString().padStart(2, "0")}м`;
-    // if (timeLeft < 0) {
-    //   clearInterval(countdownInterval);
-    //   discountBlock.style.display = "none";
-    // }
+  // date
+  const endTime = new Date("December 31, 2025 23:59:59").getTime();
+  const shownKey = "promoShown";
+
+  if (Date.now() > endTime) {
+    document.getElementById("promoBtn")?.remove();
+    document.getElementById("promoModal")?.remove();
+    return;
   }
 
-  const countdownInterval = setInterval(updateCountdown, 1000);
+  const btn = document.createElement("button");
+  btn.id = "promoBtn";
+  btn.className = "promo-btn";
+  btn.textContent = "🎁 Акция";
+  document.body.appendChild(btn);
+
+  const modal = document.createElement("div");
+  modal.id = "promoModal";
+  modal.className = "promo-modal";
+  modal.innerHTML = `
+    <div id="promoOverlay" class="promo-modal__overlay"></div>
+    <div class="promo-modal__dialog">
+      <div class="dotted-div">
+        <button id="promoClose" class="promo-modal__close">×</button>
+        <h3 class="promo-modal__title">Пригласите друга и получите скидку <br>10&nbsp;000&nbsp;рублей!</h3>
+        <p class="promo-modal__subtitle">Время до окончания акции:</p>
+        <div id="promoCountdown" class="countdown">00д 00ч 00м</div>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+
+  const overlay = modal.querySelector("#promoOverlay");
+  const close = modal.querySelector("#promoClose");
+  const timerEl = modal.querySelector("#promoCountdown");
+
+  /* —-- таймер —-- */
+  const updateTimer = () => {
+    const diff = endTime - Date.now();
+    if (diff <= 0) {
+      btn.style.display = "none";
+      modal.style.display = "none";
+      clearInterval(int);
+      return;
+    }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    timerEl.textContent = `${d}д ${h.toString().padStart(2, "0")}ч ${m
+      .toString()
+      .padStart(2, "0")}м`;
+  };
+  updateTimer();
+  const int = setInterval(updateTimer, 60000);
+
+  /* —-- показать / скрыть —-- */
+  const show = () => {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+  const hide = () => {
+    modal.style.display = "none";
+    localStorage.setItem(shownKey, "1");
+    document.body.style.overflow = "";
+  };
+
+  btn.addEventListener("click", show);
+  close.addEventListener("click", hide);
+  overlay.addEventListener("click", hide);
+
+  /* —-- стартовая логика —-- */
+  if (Date.now() < endTime) {
+    btn.style.display = "block";
+    if (!localStorage.getItem(shownKey)) show();
+  } else {
+    btn.style.display = "none";
+  }
 });
 
+// burger
 document.addEventListener("DOMContentLoaded", () => {
   const burgerBtn = document.querySelector(".burger");
   const burgerMenu = document.querySelector(".nav__burger");

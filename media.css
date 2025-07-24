@@ -36,6 +36,7 @@
 
   .welcome {
     padding-bottom: 0;
+    padding-top: 200px;
   }
 
   .welcome__container {
@@ -115,7 +116,7 @@
   }
 
   .welcome {
-    padding-top: 300px;
+    padding-top: 270px;
   }
 
   .header__link-address {

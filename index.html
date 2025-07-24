@@ -187,23 +187,33 @@
           </div>
         </div>
         <button id="floating-button">&#8593;</button>
+        <!-- modal -->
+        <button id="promoBtn" class="promo-btn">🎁 Акция</button>
       </div>
     </header>
 
     <main>
+      <!-- modal -->
+      <div id="promoModal" class="promo-modal">
+        <div class="promo-modal__overlay" id="promoOverlay"></div>
+
+        <div class="promo-modal__dialog">
+          <button id="promoClose" class="promo-modal__close">×</button>
+
+          <h3 class="promo-modal__title">
+            Пригласите друга и получите скидку <br />10&nbsp;000&nbsp;рублей!
+          </h3>
+          <p class="promo-modal__subtitle">Время до окончания акции:</p>
+
+          <div id="promoCountdown" class="countdown">00д 00ч 00м</div>
+
+          <a href="#form" class="promo-modal__action btn">Получить скидку</a>
+        </div>
+      </div>
+
       <section class="welcome visible">
         <div class="container welcome__container">
           <div class="welcome__block">
-            <div class="welcome__discount">
-              <div class="dotted-div">
-                <h3 class="text">
-                  Пригласите друга и получите скидку <br />
-                  10 000 рублей!
-                </h3>
-                <p class="text">Время до окончания акции:</p>
-                <div id="countdown" class="countdown">00:00:00</div>
-              </div>
-            </div>
             <div class="welcome__text">
               <div class="dotted-div">
                 <h1 class="header">
@@ -468,7 +478,7 @@
                 <p class="card__description">
                   Новый закон, вступивший в силу с 1 сентября 2020 года...
                 </p>
-                <a href="page/error.html" class="card__button"
+                <a href="page/services__vnesudebnaya.html" class="card__button"
                   >Узнать про банкротство</a
                 >
               </div>
