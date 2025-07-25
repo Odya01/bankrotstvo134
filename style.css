@@ -1046,7 +1046,10 @@ header {
   text-align: center;
 
   transition: transform 0.3s ease;
-  will-change: transform;
+}
+
+.pricing__item--active {
+  transform: scale(1.03);
 }
 
 .pricing__item .dotted-div {

@@ -415,3 +415,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// price anim card
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".pricing__item");
+
+  const highlightVisibleCard = () => {
+    let closestCard = null;
+    let minDistance = Infinity;
+
+    cards.forEach((card) => {
+      const rect = card.getBoundingClientRect();
+      const cardCenter = rect.top + rect.height / 2;
+      const screenCenter = window.innerHeight / 2;
+      const distance = Math.abs(cardCenter - screenCenter);
+
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isVisible && distance < minDistance) {
+        minDistance = distance;
+        closestCard = card;
+      }
+    });
+
+    cards.forEach((card) => {
+      if (card === closestCard) {
+        card.classList.add("pricing__item--active");
+      } else {
+        card.classList.remove("pricing__item--active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", highlightVisibleCard);
+});
