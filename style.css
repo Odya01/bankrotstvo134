@@ -314,6 +314,7 @@ header {
 .dropdown {
   display: none;
   position: absolute;
+  position: absolute;
   top: 100%;
   left: -25px;
   margin: 0;
@@ -325,7 +326,7 @@ header {
   padding: 5px;
 
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   border-radius: 10px;
 }
 
@@ -821,6 +822,11 @@ header {
 .arrow-step svg {
   width: 30px;
   height: 30px;
+  transition: .3s ease;
+}
+
+.promotional__step:hover .arrow-step svg {
+  width: 40px;
 }
 
 .promotional__step-text {
@@ -875,9 +881,9 @@ header {
 }
 
 .promotional__details.open {
-  max-height: 1000px;
+  max-height: none;
   display: flex;
-  padding: 30px;
+  padding: 20px;
   border: 2px dotted var(--blue);
 }
 
@@ -1252,7 +1258,7 @@ header {
 }
 
 .footer__links li {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .footer__links a {
@@ -1529,6 +1535,10 @@ header {
   font-weight: 700;
 }
 
+.services__text a {
+  color: var(--blue);
+}
+
 .services__list {
   font-size: 20px;
 }
@@ -1542,6 +1552,7 @@ table.cinereousTable {
   background-color: #faf0e5;
   width: 100%;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 table.cinereousTable td,
