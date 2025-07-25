@@ -1044,6 +1044,9 @@ header {
   border-radius: 20px;
   padding: 10px;
   text-align: center;
+
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
 .pricing__item .dotted-div {

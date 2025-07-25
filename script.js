@@ -1,3 +1,4 @@
+// dropdown index
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("toggleButton");
   const details = document.getElementById("details");
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// faq
 document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".faq__question");
 
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// swiper slider
 document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper(".swiper", {
     direction: "horizontal",
@@ -68,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//
+// dropdown header menu
 document.addEventListener("DOMContentLoaded", () => {
   const servicesLink = document.getElementById("services-link");
 
@@ -232,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//
+// btn upper
 document
   .getElementById("floating-button")
   .addEventListener("click", function () {
@@ -242,7 +245,7 @@ document
     });
   });
 
-//
+// grid with case example
 document.addEventListener("DOMContentLoaded", () => {
   const cases = [
     {
@@ -394,7 +397,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//
+// viewer images
 document.addEventListener("DOMContentLoaded", function () {
   const viewerImages = document.querySelectorAll(".viewer__image");
 
