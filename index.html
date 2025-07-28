@@ -1444,10 +1444,34 @@
       </section>
 
       <section class="blog-preview" id="blog-preview">
-        <div class="container">
+        <div class="container container__blog">
           <h2 class="heading">Юрист разъясняет</h2>
 
-          <div class="blog-preview__grid">
+          <div class="blog__posts">
+            <div class="blog__post_vk">
+              <div id="vk_groups"></div>
+              <script
+                type="text/javascript"
+                src="https://vk.com/js/api/openapi.js?169"
+              ></script>
+              <script type="text/javascript">
+                VK.Widgets.Group(
+                  "vk_groups",
+                  {
+                    mode: 4,
+                    width: "auto",
+                    height: 600,
+                    color1: "FFFFFF",
+                    color2: "000000",
+                    color3: "5181B8",
+                  },
+                  199689722
+                );
+              </script>
+            </div>
+          </div>
+
+          <!-- <div class="blog-preview__grid">
             <a href="error.html" class="blog-preview__item">
               <img
                 src="images/blog-preview__image1.webp"
@@ -1469,47 +1493,7 @@
               </div>
             </a>
 
-            <a href="error.html" class="blog-preview__item">
-              <img
-                src="images/blog-preview__image2.webp"
-                alt="Как оформить банкротство"
-                class="blog-preview__image"
-              />
-              <div class="blog-preview__content">
-                <h3 class="blog-preview__title">
-                  Как оформить банкротство в 2023 году: подробная пошаговая
-                  инструкция
-                </h3>
-                <p class="blog-preview__date">
-                  <span class="blog-preview__icon">📅</span> 30.05.2023
-                </p>
-                <p class="blog-preview__text">
-                  Банкротство физического лица стало одним из наиболее
-                  востребованных способов решения финансовых проблем...
-                </p>
-              </div>
-            </a>
-
-            <a href="error.html" class="blog-preview__item">
-              <img
-                src="images/blog-preview__image3.webp"
-                alt="Последствия банкротства для физических лиц"
-                class="blog-preview__image"
-              />
-              <div class="blog-preview__content">
-                <h3 class="blog-preview__title">
-                  Последствия банкротства для физических лиц
-                </h3>
-                <p class="blog-preview__date">
-                  <span class="blog-preview__icon">📅</span> 24.05.2023
-                </p>
-                <p class="blog-preview__text">
-                  Последствия банкротства для физических лиц признание кредитной
-                  несостоятельности...
-                </p>
-              </div>
-            </a>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
@@ -1741,5 +1725,8 @@
 
     <script src="/src/js/swiper-bundle.min.js"></script>
     <script src="/src/js/script.js"></script>
+
+    <!-- tiktok -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
   </body>
 </html>
