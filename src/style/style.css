@@ -206,6 +206,12 @@ header {
   gap: 10px;
 }
 
+.org__links_div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .header__link-social {
   height: 30px;
 }

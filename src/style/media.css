@@ -23,6 +23,7 @@
 
   .header__address {
     flex-direction: column;
+    width: 100%;
     gap: 30px;
   }
 
@@ -116,15 +117,11 @@
   }
 
   .welcome {
-    padding-top: 270px;
+    padding-top: 320px;
   }
 
   .header__link-address {
     font-size: 26px;
-  }
-
-  .header__map-address {
-    font-size: 14px;
   }
 
   .why__grid,
@@ -163,11 +160,28 @@
   }
 
   .page-welcome {
-    padding: 130px 0;
+    padding: 150px 0;
   }
 
   .stage__item .dotted-div {
     padding-right: 20px;
+  }
+
+  .org__links {
+    flex-direction: column;
+  }
+
+  .header__link-social svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header__link-social {
+    height: 35px;
+  }
+
+  .btn__question {
+    display: none;
   }
 }
 
