@@ -311,6 +311,61 @@ header {
   gap: 5px;
 }
 
+.submenu__icon {
+  margin-left: 8px;
+  vertical-align: middle;
+  transform: rotate(-180deg);
+  transition: .3s ease;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  white-space: nowrap;
+  min-width: 200px;
+
+  margin-left: -1px;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+  position: absolute;
+}
+
+.has-submenu:hover .submenu__icon {
+  transform: rotate(0deg);
+}
+
+.dropdown li a,
+.dropdown__label {
+  color: var(--gray);
+  padding: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.dropdown li a:hover {
+  background: var(--lightgray);
+}
+
+.dropdown__label {
+  cursor: default;
+}
+
 .nav__list .faq__icon {
   width: 20px;
   height: 20px;
@@ -320,20 +375,29 @@ header {
 .dropdown {
   display: none;
   position: absolute;
-  position: absolute;
   top: 100%;
   left: -25px;
   margin: 0;
   margin-top: 20px;
   background-color: #fff;
-  min-width: 200px;
+  min-width: 250px;
   z-index: 1;
   list-style-type: none;
   padding: 5px;
 
   flex-direction: column;
   gap: 7px;
-  border-radius: 10px;
+  border-radius: 15px;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown .dotted-div {
+  padding: 5px;
 }
 
 .dropdown li a {
@@ -345,6 +409,7 @@ header {
   border-radius: 5px;
   text-decoration: none;
   display: block;
+  transition: .3s ease;
 }
 
 .dropdown li a:hover {
@@ -1013,7 +1078,7 @@ header {
 }
 
 .faq__question.open .faq__icon {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 .faq__answer {
@@ -1407,13 +1472,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .welcome_breadcrumbs__heading {
   color: var(--black);
   font-size: 30px;
   margin: 0;
-  margin-bottom: 10px;
 }
 
 .breadcrumbs__link {
