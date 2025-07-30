@@ -105,6 +105,10 @@
   .footer__content {
     flex-direction: column;
   }
+
+  .reviews__iframe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
