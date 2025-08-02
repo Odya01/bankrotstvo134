@@ -50,12 +50,15 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 1,
       },
       600: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       800: {
         slidesPerView: 2,
       },
       1024: {
+        slidesPerView: 3,
+      },
+      2000: {
         slidesPerView: 3,
       },
     },

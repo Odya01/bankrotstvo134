@@ -187,6 +187,15 @@
   .btn__question {
     display: none;
   }
+
+  .footer__item {
+    display: grid;
+    grid-template-columns: 24px 90px 1fr;
+  }
+
+  .footer__label {
+    text-wrap: wrap;
+  }
 }
 
 @media (max-width: 400px) {
