@@ -556,7 +556,7 @@ header {
   height: 800px;
   transform: translate(-50%);
   z-index: 2;
-  background-image: url(../../images/welcome.png);
+  background-image: url(../../images/welcome.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
