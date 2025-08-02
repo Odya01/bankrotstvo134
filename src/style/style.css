@@ -1730,8 +1730,14 @@ table.cinereousTable tbody td {
 
 /*  */
 /* reviews page */
+.reviews .container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .reviews__iframe {
-  width: 600px;
+  width: 750px;
   height: 900px;
   border: 1px solid #e6e6e6;
   border-radius: 8px;
