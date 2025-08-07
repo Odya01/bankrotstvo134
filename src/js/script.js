@@ -99,8 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dropdownItems.forEach((item) => {
     item.addEventListener("click", (event) => {
       event.stopPropagation();
-      const dropdown = document.querySelector(".dropdown");
-      dropdown.classList.remove("show");
+      document.querySelector(".dropdown").classList.remove("show");
     });
   });
 });
