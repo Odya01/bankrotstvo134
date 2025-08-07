@@ -162,7 +162,7 @@ section {
 }
 
 .has-submenu .nav__toggle {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 700;
   text-align: end;
 }
@@ -1034,7 +1034,7 @@ header {
 }
 
 .promotional__info {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .promotional__details.open {

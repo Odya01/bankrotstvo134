@@ -199,8 +199,8 @@
 
   .nav__burger {
     padding: 35px;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    padding-top: 60px;
+    padding-bottom: 70px;
     padding-left: 10px;
   }
 
@@ -216,6 +216,10 @@
 
   .nav__subdropdown a {
     font-size: 19px;
+  }
+
+  .name__org {
+    align-items: center;
   }
 }
 
