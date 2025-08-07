@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           mode: 4,
           width: "auto",
-          height: 600,
+          height: 650,
           color1: "FFFFFF",
           color2: "000000",
           color3: "5181B8",
