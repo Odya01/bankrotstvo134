@@ -196,6 +196,27 @@
   .footer__label {
     text-wrap: wrap;
   }
+
+  .nav__burger {
+    padding: 35px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    padding-left: 10px;
+  }
+
+  .nav__toggle,
+  .nav__burger .nav__list {
+    font-size: 25px;
+  }
+
+  .has-submenu .nav__toggle,
+  .nav__dropdown a {
+    font-size: 22px;
+  }
+
+  .nav__subdropdown a {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 400px) {

@@ -188,29 +188,36 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const burgerBtn = document.querySelector(".burger");
   const burgerMenu = document.querySelector(".nav__burger");
-  const navLink = document.querySelectorAll(".nav__list");
+  const body = document.body;
 
   burgerBtn.addEventListener("click", () => {
     burgerMenu.classList.toggle("active");
-    document.body.classList.toggle("overflow");
+    body.classList.toggle("overflow");
   });
 
-  // close link click
-  navLink.forEach((e) => {
-    e.addEventListener("click", () => {
-      if (burgerMenu.classList.contains("active")) {
-        burgerMenu.classList.remove("active");
-        document.body.classList.remove("overflow");
-        document.getElementById("burger-checkbox").checked = false;
-      }
+  const toggles = document.querySelectorAll(".nav__toggle");
+
+  toggles.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      item.classList.toggle("open");
+      const list = item.nextElementSibling;
+      if (list) list.classList.toggle("open");
+      e.stopPropagation();
     });
   });
 
-  // close out nav list
+  burgerMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      burgerMenu.classList.remove("active");
+      body.classList.remove("overflow");
+      document.getElementById("burger-checkbox").checked = false;
+    });
+  });
+
   document.querySelector("main").addEventListener("click", () => {
     if (burgerMenu.classList.contains("active")) {
       burgerMenu.classList.remove("active");
-      document.body.classList.remove("overflow");
+      body.classList.remove("overflow");
       document.getElementById("burger-checkbox").checked = false;
     }
   });
@@ -426,30 +433,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const highlightVisibleCard = () => {
     let closestCard = null;
-    let minDistance = Infinity;
+    let minTop = Infinity;
 
     cards.forEach((card) => {
       const rect = card.getBoundingClientRect();
-      const cardCenter = rect.top + rect.height / 2;
-      const screenCenter = window.innerHeight / 2;
-      const distance = Math.abs(cardCenter - screenCenter);
 
       const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
 
-      if (isVisible && distance < minDistance) {
-        minDistance = distance;
+      if (isVisible && rect.top >= -10 && rect.top < minTop) {
+        minTop = rect.top;
         closestCard = card;
       }
     });
 
     cards.forEach((card) => {
-      if (card === closestCard) {
-        card.classList.add("pricing__item--active");
-      } else {
-        card.classList.remove("pricing__item--active");
-      }
+      card.classList.toggle("pricing__item--active", card === closestCard);
     });
   };
 
   window.addEventListener("scroll", highlightVisibleCard);
+  highlightVisibleCard();
+});
+
+// footer dropdown menu
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".footer__toggle").forEach((tg) => {
+    tg.addEventListener("click", () => {
+      tg.classList.toggle("open");
+      const list = tg.nextElementSibling;
+      if (list) list.classList.toggle("open");
+    });
+  });
 });

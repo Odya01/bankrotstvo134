@@ -272,7 +272,72 @@
             <label for="burger-checkbox" class="burger"></label>
 
             <nav class="nav__burger">
-              <a href="#footer__services" class="nav__list">Услуги</a>
+              <div class="nav__drop_item">
+                <button class="nav__toggle">
+                  Услуги
+                  <span class="nav__burger_arrow">&#9660;</span>
+                </button>
+
+                <ul class="nav__dropdown">
+                  <li>
+                    <a href="#proverka">Проверка заемщика на соответствие</a>
+                  </li>
+                  <li class="has-submenu">
+                    <button class="nav__toggle">
+                      Банкротство граждан
+                      <span class="nav__burger_arrow">&#9660;</span>
+                    </button>
+
+                    <ul class="nav__subdropdown">
+                      <li>
+                        <a href="page/article__s-ipotekoj.html"
+                          >Банкроство с ипотекой</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__pensionerov.html"
+                          >Банкротство пенсионера</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__mobilizovannyh.html"
+                          >Банкротство для мобилизованных</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__poruchitelej.html"
+                          >Банкротство поручителей</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__suprugov.html"
+                          >Банкротство супругов</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__umershego.html"
+                          >Банкротство умершего</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__vnesudebnaya.html"
+                          >Внесудебное банкротство</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#sbor">Сбор документов</a></li>
+                  <li><a href="#podgotovka">Подготовка к процедуре</a></li>
+                  <li>
+                    <a href="#yurSoprovojdenie">Юридическое сопровождение</a>
+                  </li>
+
+                  <li><a href="#fin">Финансовый управляющий</a></li>
+                  <li><a href="#property">Сохранение имущества</a></li>
+                </ul>
+              </div>
+
               <a href="price.html" class="nav__list">Цены</a>
               <a href="case.html" class="nav__list">Примеры выигранных дел</a>
               <a href="reviews.html" class="nav__list">Отзывы</a>
@@ -1524,30 +1589,85 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__links">
-            <ul>
-              <li>
-                <a href="#proverka">Проверка заемщика на соответствие</a>
+            <ul class="footer__menu">
+              <li class="footer__item has-dropdown">
+                <span class="footer__toggle"
+                  >Услуги<span class="footer__arrow">▼</span></span
+                >
+                <ul class="footer__dropdown">
+                  <li>
+                    <a href="#proverka">Проверка заемщика на соответствие</a>
+                  </li>
+                  <li><a href="#sbor">Сбор документов</a></li>
+                  <li><a href="#podgotovka">Подготовка к процедуре</a></li>
+                  <li>
+                    <a href="#yurSoprovojdenie">Юридическое сопровождение</a>
+                  </li>
+
+                  <li class="footer__item has-submenu">
+                    <span class="footer__toggle"
+                      >Банкротство граждан<span class="footer__arrow"
+                        >▼</span
+                      ></span
+                    >
+                    <ul class="footer__subdropdown">
+                      <li>
+                        <a href="page/article__s-ipotekoj.html"
+                          >Банкротство с ипотекой</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__pensionerov.html"
+                          >Банкротство пенсионера</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__mobilizovannyh.html"
+                          >Банкротство для мобилизованных</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__poruchitelej.html"
+                          >Банкротство поручителей</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__suprugov.html"
+                          >Банкротство супругов</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__umershego.html"
+                          >Банкротство умершего</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page/article__vnesudebnaya.html"
+                          >Внесудебное банкротство</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#fin">Финансовый управляющий</a></li>
+                  <li><a href="#property">Сохранение имущества</a></li>
+                </ul>
               </li>
+
+              <li><a href="price.html" class="footer__link">Цены</a></li>
               <li>
-                <a href="#sbor">Сбор документов</a>
-              </li>
-              <li>
-                <a href="#podgotovka">Подготовка к процедуре</a>
-              </li>
-              <li>
-                <a href="#yurSoprovojdenie">Юридическое сопровождение</a>
-              </li>
-              <li>
-                <a href="#bankrotKey"
-                  >Судебное банкротство граждан «под ключ»</a
+                <a href="case.html" class="footer__link"
+                  >Примеры выигранных дел</a
                 >
               </li>
+              <li><a href="reviews.html" class="footer__link">Отзывы</a></li>
               <li>
-                <a href="#fin">"Финансовый управляющий"</a>
+                <a href="index.html#faq" class="footer__link"
+                  >Вопросы и ответы</a
+                >
               </li>
-              <li>
-                <a href="#property">Сохранение имущества</a>
-              </li>
+              <li><a href="#blog-preview" class="footer__link">Статьи</a></li>
+              <li><a href="#footer" class="footer__link">Контакты</a></li>
             </ul>
           </div>
 
