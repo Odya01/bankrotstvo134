@@ -109,6 +109,10 @@
   .reviews__iframe {
     width: 100%;
   }
+
+  table.cinereousTable tbody td {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -134,7 +138,8 @@
     flex-direction: column;
   }
 
-  .header {
+  .header,
+  .services__heading {
     font-size: 26px;
   }
 
@@ -154,6 +159,10 @@
     font-size: 24px;
   }
 
+  .text {
+    font-size: 18px;
+  }
+
   .stage__item .stage__heading {
     padding-right: 75px;
   }
@@ -164,11 +173,23 @@
   }
 
   .page-welcome {
-    padding: 160px 0;
+    padding: 150px 0;
   }
 
   .stage__item .dotted-div {
     padding-right: 20px;
+  }
+
+  .table__btn {
+    flex-direction: column;
+  }
+
+  .table__btn .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .org__links {

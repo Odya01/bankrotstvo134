@@ -197,10 +197,6 @@ section {
   right: 0;
 }
 
-.burger__btn {
-  cursor: pointer;
-}
-
 .burger {
   cursor: pointer;
   display: none;
@@ -1181,6 +1177,12 @@ header {
   margin: 0;
 }
 
+.faq__answer ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
 .faq__answer.open {
   display: block;
   padding-top: 10px;
@@ -1764,7 +1766,6 @@ header {
 }
 
 .services__text_bold {
-  margin-top: 30px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -1774,6 +1775,7 @@ header {
 }
 
 .services__text a {
+  font-size: 24px;
   color: var(--blue);
 }
 
@@ -1786,7 +1788,13 @@ header {
 }
 
 /* table */
+.table__wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 table.cinereousTable {
+  overflow-x: auto;
   background-color: #faf0e5;
   width: 100%;
   text-align: center;
@@ -1805,6 +1813,20 @@ table.cinereousTable th {
 
 table.cinereousTable tbody td {
   font-size: 20px;
+}
+
+.table__btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_table {
+  background-color: var(--wh);
+  border: 1px solid var(--red);
+  color: var(--red);
 }
 
 .services__line {
