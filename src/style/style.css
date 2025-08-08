@@ -197,6 +197,10 @@ section {
   right: 0;
 }
 
+.burger__btn {
+  cursor: pointer;
+}
+
 .burger {
   cursor: pointer;
   display: none;
@@ -1586,6 +1590,7 @@ header {
 /* welcome_breadcrumbs */
 .welcome_breadcrumbs {
   background-color: #f1f1f1;
+  padding: 40px 0;
 }
 
 .welcome_breadcrumbs__container {

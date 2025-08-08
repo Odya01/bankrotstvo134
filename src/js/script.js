@@ -186,14 +186,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // burger
 document.addEventListener("DOMContentLoaded", () => {
-  const burgerBtn = document.querySelector(".burger");
+  const burgerBtns = document.querySelectorAll(".burger, .burger__btn");
   const burgerMenu = document.querySelector(".nav__burger");
   const body = document.body;
 
-  burgerBtn.addEventListener("click", () => {
-    burgerMenu.classList.toggle("active");
-    body.classList.toggle("overflow");
-  });
+  if (window.innerWidth < 1000) {
+    burgerBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        burgerMenu.classList.toggle("active");
+        body.classList.toggle("overflow");
+        if (btn.classList.contains("burger__btn")) {
+          const checkbox = document.getElementById("burger-checkbox");
+          checkbox.checked = !checkbox.checked;
+        }
+      });
+    });
+  }
 
   const toggles = document.querySelectorAll(".nav__toggle");
 
