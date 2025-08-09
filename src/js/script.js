@@ -189,44 +189,81 @@ document.addEventListener("DOMContentLoaded", () => {
   const burgerBtns = document.querySelectorAll(".burger, .burger__btn");
   const burgerMenu = document.querySelector(".nav__burger");
   const body = document.body;
+  const main = document.querySelector("main");
+  const checkbox = document.getElementById("burger-checkbox");
+  const toggles = document.querySelectorAll(".nav__toggle");
 
-  if (window.innerWidth < 1000) {
+  const closeMenu = () => {
+    if (burgerMenu) burgerMenu.classList.remove("active");
+    body.classList.remove("overflow");
+    if (checkbox) checkbox.checked = false;
+  };
+
+  const openMenu = () => {
+    if (burgerMenu) burgerMenu.classList.add("active");
+    body.classList.add("overflow");
+    if (checkbox) checkbox.checked = true;
+  };
+
+  const toggleMenu = () => {
+    if (burgerMenu && burgerMenu.classList.contains("active")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  };
+
+  if (window.innerWidth < 1000 && burgerBtns.length) {
     burgerBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
-        burgerMenu.classList.toggle("active");
-        body.classList.toggle("overflow");
-        if (btn.classList.contains("burger__btn")) {
-          const checkbox = document.getElementById("burger-checkbox");
-          checkbox.checked = !checkbox.checked;
-        }
+        toggleMenu();
       });
     });
   }
 
-  const toggles = document.querySelectorAll(".nav__toggle");
-
-  toggles.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      item.classList.toggle("open");
-      const list = item.nextElementSibling;
-      if (list) list.classList.toggle("open");
-      e.stopPropagation();
+  if (toggles.length) {
+    toggles.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        item.classList.toggle("open");
+        const list = item.nextElementSibling;
+        if (list) list.classList.toggle("open");
+        e.stopPropagation();
+      });
     });
+  }
+
+  if (burgerMenu) {
+    burgerMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        closeMenu();
+      });
+    });
+  }
+
+  if (main) {
+    main.addEventListener("click", () => {
+      if (burgerMenu && burgerMenu.classList.contains("active")) {
+        closeMenu();
+      }
+    });
+  }
+
+  // Закрывать меню при клике на любые якорные ссылки по странице
+  document.addEventListener("click", (e) => {
+    const anchor = e.target.closest('a[href^="#"]');
+    if (!anchor) return;
+    closeMenu();
   });
 
-  burgerMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      burgerMenu.classList.remove("active");
-      body.classList.remove("overflow");
-      document.getElementById("burger-checkbox").checked = false;
-    });
+  // Если переход по хэшу произошёл программно
+  window.addEventListener("hashchange", () => {
+    closeMenu();
   });
 
-  document.querySelector("main").addEventListener("click", () => {
-    if (burgerMenu.classList.contains("active")) {
-      burgerMenu.classList.remove("active");
-      body.classList.remove("overflow");
-      document.getElementById("burger-checkbox").checked = false;
+  // При увеличении экрана до десктопа — снять блокировки прокрутки и закрыть меню
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1000) {
+      closeMenu();
     }
   });
 });
