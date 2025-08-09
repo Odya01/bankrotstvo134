@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /src/
+Disallow: /files/
+Allow: /style/
+Allow: /js/
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+
+Sitemap: https://банкротство134.рф/sitemap.xml
