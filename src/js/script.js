@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="promo-modal__dialog">
       <div class="dotted-div">
         <button id="promoClose" class="promo-modal__close">×</button>
-        <h3 class="promo-modal__title">Пригласите друга и получите скидку <br>10&nbsp;000&nbsp;рублей!</h3>
+        <h3 class="promo-modal__title">При оплате всей суммы сразу скидка <br>10&nbsp;000&nbsp;рублей!</h3>
         <p class="promo-modal__subtitle">Время до окончания акции:</p>
         <div id="promoCountdown" class="countdown">00д 00ч 00м</div>
       </div>
