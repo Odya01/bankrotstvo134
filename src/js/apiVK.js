@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
       VK.Widgets.Group(
         "vk_groups",
         {
-          mode: 4,
+          mode: 1,
           width: "auto",
-          height: 650,
+          height: "auto",
           color1: "FFFFFF",
           color2: "000000",
-          color3: "5181B8",
+          color3: "2f6ea2",
         },
         199689722
       );

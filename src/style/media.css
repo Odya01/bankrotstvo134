@@ -243,6 +243,10 @@
     align-items: center;
     text-align: center;
   }
+
+  .blog__post_vk {
+    width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
