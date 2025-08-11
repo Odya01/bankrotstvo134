@@ -184,6 +184,176 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// modal form
+document.addEventListener("DOMContentLoaded", () => {
+  const TRIGGER_ID = "contactBtn";
+
+  const USE = "formsubmit";
+  const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/bankrot134@mail.ru";
+
+  const trigger = document.getElementById(TRIGGER_ID);
+  if (!trigger) return;
+
+  const modal = document.createElement("div");
+  modal.className = "contact-modal";
+  modal.id = "contactModal";
+  modal.innerHTML = `
+    <div class="contact-modal__overlay" id="contactOverlay"></div>
+    <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="ctTitle">
+      <div class="contact-modal__pad">
+        <div class="dotted-div">
+          <button class="contact-modal__close" id="contactClose" aria-label="Закрыть">×</button>
+          <h3 class="contact-modal__title" id="ctTitle">Связаться с нами</h3>
+          <p class="contact-modal__subtitle">Введите контактные данные — мы напишем вам на почту или телефон.</p>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="contact-form__row">
+              <div>
+                <input class="contact-input" id="cfName" name="name" type="text" placeholder="Ваше имя*" required />
+                <div class="input-error" id="errName"></div>
+              </div>
+              <div>
+                <input class="contact-input" id="cfEmail" name="email" type="email" placeholder="E-mail*" required />
+                <div class="input-error" id="errEmail"></div>
+              </div>
+            </div>
+            <div>
+              <input class="contact-input" id="cfPhone" name="phone" type="tel" placeholder="Телефон (необязательно)" />
+              <div class="input-error" id="errPhone"></div>
+            </div>
+
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_subject" value="Заявка с сайта">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+
+            <button class="contact-submit" id="contactSubmit" type="submit">Отправить</button>
+            <div class="contact-status" id="contactStatus" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+
+  const overlay = modal.querySelector("#contactOverlay");
+  const close = modal.querySelector("#contactClose");
+  const form = modal.querySelector("#contactForm");
+  const status = modal.querySelector("#contactStatus");
+  const submit = modal.querySelector("#contactSubmit");
+
+  const show = () => {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+  const hide = () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "";
+    status.textContent = "";
+    status.className = "contact-status";
+    form.reset();
+    clearErrors();
+  };
+  trigger.addEventListener("click", show);
+  overlay.addEventListener("click", hide);
+  close.addEventListener("click", hide);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "flex") hide();
+  });
+
+  // ----- Валидация -----
+  const nameEl = form.querySelector("#cfName");
+  const emailEl = form.querySelector("#cfEmail");
+  const phoneEl = form.querySelector("#cfPhone");
+
+  const err = {
+    name: document.getElementById("errName"),
+    email: document.getElementById("errEmail"),
+    phone: document.getElementById("errPhone"),
+  };
+
+  const reEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+  const rePhone = /^\+?[0-9\s()-]{7,}$/;
+
+  function clearErrors() {
+    Object.values(err).forEach((e) => (e.textContent = ""));
+    [nameEl, emailEl, phoneEl].forEach((i) =>
+      i.classList.remove("input--error")
+    );
+  }
+
+  function validate() {
+    clearErrors();
+    let ok = true;
+
+    if (nameEl.value.trim().length < 2) {
+      err.name.textContent = "Введите имя (минимум 2 символа).";
+      nameEl.classList.add("input--error");
+      ok = false;
+    }
+    if (!reEmail.test(emailEl.value.trim())) {
+      err.email.textContent = "Укажите корректный e-mail.";
+      emailEl.classList.add("input--error");
+      ok = false;
+    }
+    if (phoneEl.value.trim() && !rePhone.test(phoneEl.value.trim())) {
+      err.phone.textContent = "Неверный формат телефона.";
+      phoneEl.classList.add("input--error");
+      ok = false;
+    }
+    return ok;
+  }
+
+  [nameEl, emailEl, phoneEl].forEach((i) => {
+    i.addEventListener("blur", validate);
+    i.addEventListener("input", () => {
+      i.classList.remove("input--error");
+      validate();
+    });
+  });
+
+  // ----- Отправка -----
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!validate()) {
+      status.textContent = "Исправьте ошибки в форме.";
+      status.className = "contact-status contact-status--err";
+      return;
+    }
+
+    submit.disabled = true;
+    status.textContent = "Отправляем…";
+    status.className = "contact-status";
+
+    try {
+      let res;
+      if (USE === "web3forms") {
+        const fd = new FormData(form);
+        fd.append("access_key", WEB3FORMS_KEY);
+        res = await fetch(WEB3FORMS_ENDPOINT, { method: "POST", body: fd });
+      } else {
+        const data = Object.fromEntries(new FormData(form));
+        res = await fetch(FORMSUBMIT_ENDPOINT, {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+      }
+      if (!res.ok) throw 0;
+
+      status.textContent = "Готово! Сообщение отправлено.";
+      status.className = "contact-status contact-status--ok";
+      setTimeout(hide, 1600);
+    } catch {
+      status.textContent = "Не получилось отправить. Попробуйте позже.";
+      status.className = "contact-status contact-status--err";
+      submit.disabled = false;
+    }
+  });
+});
+
 // burger
 document.addEventListener("DOMContentLoaded", () => {
   const burgerBtns = document.querySelectorAll(".burger, .burger__btn");

@@ -173,7 +173,7 @@
   }
 
   .page-welcome {
-    padding: 150px 0;
+    padding: 160px 0;
   }
 
   .stage__item .dotted-div {
@@ -225,20 +225,6 @@
     padding-left: 10px;
   }
 
-  .nav__toggle,
-  .nav__burger .nav__list {
-    font-size: 25px;
-  }
-
-  .has-submenu .nav__toggle,
-  .nav__dropdown a {
-    font-size: 22px;
-  }
-
-  .nav__subdropdown a {
-    font-size: 19px;
-  }
-
   .name__org {
     align-items: center;
     text-align: center;
@@ -246,6 +232,10 @@
 
   .blog__post_vk {
     width: 100%;
+  }
+
+  .promo-modal__dialog .dotted-div {
+    padding-top: 30px;
   }
 }
 
@@ -262,9 +252,5 @@
 
   .advantages__list {
     padding: 0;
-  }
-
-  .footer__links {
-    align-items: center;
   }
 }
