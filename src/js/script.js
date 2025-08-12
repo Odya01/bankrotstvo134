@@ -180,7 +180,10 @@ document.addEventListener("DOMContentLoaded", () => {
   /* —-- стартовая логика —-- */
   if (Date.now() < endTime) {
     btn.style.display = "block";
-    if (!localStorage.getItem(shownKey)) show();
+    if (!localStorage.getItem(shownKey)) {
+      localStorage.setItem(shownKey, "1");
+      show();
+    }
   } else {
     btn.style.display = "none";
   }
