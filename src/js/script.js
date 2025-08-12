@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // swiper slider
 document.addEventListener("DOMContentLoaded", () => {
+  const swiperEl = document.querySelector(".swiper");
+  if (!swiperEl || typeof Swiper === "undefined") return;
+
   const swiper = new Swiper(".swiper", {
     direction: "horizontal",
     loop: true,
