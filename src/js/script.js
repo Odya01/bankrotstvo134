@@ -191,9 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // modal form
 document.addEventListener("DOMContentLoaded", () => {
   const TRIGGER_CLASS = "contactBtn"; // класс у всех кнопок
-  // const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/bankrot134@mail.ru";
-  const FORMSUBMIT_ENDPOINT =
-    "https://formsubmit.co/ajax/republiquez25@gmail.com";
+  const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/bankrot134@mail.ru";
 
   let modal = document.getElementById("contactModal");
   if (!modal) {
