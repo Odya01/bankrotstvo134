@@ -171,11 +171,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const hide = () => {
     modal.style.display = "none";
     document.body.style.overflow = "";
-    status.textContent = "";
-    status.className = "contact-status";
-    form.reset();
-    clearErrors();
-    submit.disabled = false; // ← вернуть возможность повторной отправки
   };
 
   btn.addEventListener("click", show);
