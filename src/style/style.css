@@ -793,6 +793,66 @@ header {
   color: var(--gray);
 }
 
+/* about */
+.about__grid {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.about__social {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.about__descr-title {
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.about__img {
+  width: 450px;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.about__descr .about__title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.about__descr .about__title2 {
+  margin-top: 10px;
+}
+
+.about__details {
+  padding-left: 20px;
+  list-style-type: circle;
+  color: var(--gray);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.about__details li {
+  font-size: 19px;
+}
+
+
 /* card */
 .services__cards {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),

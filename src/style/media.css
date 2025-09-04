@@ -92,6 +92,10 @@
     width: 100%;
     max-width: 500px;
   }
+
+  .about__grid {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 800px) {
@@ -237,6 +241,10 @@
 
   .promo-modal__dialog .dotted-div {
     padding-top: 30px;
+  }
+
+  .about__img {
+    width: 100%;
   }
 }
 
