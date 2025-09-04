@@ -76,6 +76,7 @@
     align-items: center;
   }
 
+  .key__header,
   .pricing__title,
   .pricing__prices,
   .pricing__details {
