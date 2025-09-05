@@ -1333,7 +1333,7 @@ header {
 
 .pricing__details ol {
   margin-top: 10px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .pricing__details ol li {
@@ -1347,6 +1347,13 @@ header {
 
 .pricing__details li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.price_red {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
 }
 
 .pricing__prices {
