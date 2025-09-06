@@ -1913,6 +1913,23 @@ table.cinereousTable th {
   padding: 4px 4px;
 }
 
+.table__descr {
+  text-align: center;
+  font-size: 16px;
+  color: var(--black);
+  margin: 0;
+}
+
+.table__descr a {
+  color: var(--blue);
+  text-decoration: underline;
+  transition: .3s ease;
+}
+
+.table__descr a:hover {
+  color: var(--red);
+}
+
 .td__price {
   color: var(--red);
 }
