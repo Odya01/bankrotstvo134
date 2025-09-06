@@ -796,7 +796,7 @@ header {
 /* about */
 .about__grid {
   display: flex;
-  align-items: center;
+  align-items: start;
 
   gap: 20px;
 }
@@ -828,6 +828,10 @@ header {
   border-radius: 10px;
 }
 
+.about__descr .text {
+  font-size: 17px;
+}
+
 .about__descr .about__title {
   font-size: 21px;
   font-weight: 700;
@@ -836,6 +840,8 @@ header {
 .about__descr .about__title2 {
   margin-top: 10px;
 }
+
+
 
 .about__details {
   padding-left: 20px;
@@ -849,7 +855,7 @@ header {
 }
 
 .about__details li {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 
@@ -1306,12 +1312,13 @@ header {
 
 .court__link {
   font-size: 16px;
-  color: var(--gray);
+  color: var(--blue);
+  text-decoration: underline;
   transition: .3s ease;
 }
 
 .court__link:hover {
-  color: var(--blue);
+  color: var(--blue2);
 }
 
 .key__header .pricing__title {
