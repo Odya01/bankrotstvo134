@@ -38,6 +38,12 @@ a {
   margin: 0 auto;
 }
 
+.text {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 section {
   padding: 70px 0;
 }
@@ -591,7 +597,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 180px 0;
-  padding-top: 300px;
+  padding-top: 250px;
   overflow: hidden;
 }
 
@@ -802,12 +808,15 @@ header {
 }
 
 .about__social {
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
   gap: 10px;
+}
+
+.about__social .header__tel-link {
+  color: var(--black);
 }
 
 .about__descr-title {
@@ -1008,6 +1017,13 @@ header {
   border-color: var(--wh);
 }
 
+.stages__text {
+  color: var(--black);
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* promotional */
 .promotional__block {
   display: flex;
@@ -1058,11 +1074,7 @@ header {
   font-size: 18px;
 }
 
-.text {
-  font-size: 20px;
-  margin: 0;
-  margin-bottom: 10px;
-}
+
 
 .promotional__details {
   margin-top: 40px;
@@ -1399,6 +1411,12 @@ header {
   align-items: center;
 }
 
+.case-carousel__text {
+  margin-bottom: 20px;
+  color: var(--black);
+  text-align: center;
+}
+
 .swiper {
   width: 100%;
   height: auto;
@@ -1433,7 +1451,7 @@ header {
 }
 
 .case__btn {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* blog-preview */
@@ -1639,6 +1657,11 @@ header {
 }
 
 .footer__company p:not(:last-child) {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer__company .org__links_div {
   margin-bottom: 10px;
 }
 
@@ -1646,7 +1669,7 @@ header {
   width: 100%;
   max-width: 260px;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer__map-placeholder {
@@ -1719,6 +1742,11 @@ header {
   color: var(--black);
   font-size: 30px;
   margin: 0;
+}
+
+.welcome_breadcrumbs__text {
+  text-align: center;
+  color: var(--black);
 }
 
 .breadcrumbs__link {

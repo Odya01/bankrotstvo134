@@ -123,6 +123,10 @@
   table.cinereousTable tbody td {
     font-size: 17px;
   }
+
+  .welcome {
+    padding-top: 260px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -154,7 +158,7 @@
   }
 
   .dotted-div {
-    padding: 20px;
+    padding: 15px;
   }
 
   .header__list {
