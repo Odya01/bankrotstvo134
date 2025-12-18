@@ -191,158 +191,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // modal form
 document.addEventListener("DOMContentLoaded", () => {
-  const TRIGGER_CLASS = "contactBtn"; // класс у всех кнопок
-  const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/bankrot134@mail.ru";
+  const contactBtns = document.querySelectorAll(".contactBtn");
+  if (!contactBtns.length) return;
 
-  let modal = document.getElementById("contactModal");
-  if (!modal) {
-    modal = document.createElement("div");
-    modal.className = "contact-modal";
-    modal.id = "contactModal";
-    modal.innerHTML = `
-      <div class="contact-modal__overlay" id="contactOverlay"></div>
-      <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="ctTitle">
-        <div class="contact-modal__pad">
-          <div class="dotted-div">
-            <button class="contact-modal__close" id="contactClose" aria-label="Закрыть">×</button>
-            <h3 class="contact-modal__title" id="ctTitle">Связаться с нами</h3>
-            <p class="contact-modal__subtitle">Введите контактные данные — мы напишем вам на почту или телефон.</p>
+  const DEFAULT_TEL = "+79053309095";
 
-            <form class="contact-form" id="contactForm" novalidate>
-              <div class="contact-form__row">
-                <div>
-                  <input class="contact-input" id="cfName" name="name" type="text" placeholder="Ваше имя*" required />
-                  <div class="input-error" id="errName"></div>
-                </div>
-                <div>
-                  <input class="contact-input" id="cfPhone" name="phone" type="tel" placeholder="Телефон*" required/>
-                  <div class="input-error" id="errPhone"></div>
-                </div>
-              </div>
-            
-
-              <input type="text" name="_honey" style="display:none">
-              <input type="hidden" name="_subject" value="Заявка с сайта">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
-
-              <button class="contact-submit" id="contactSubmit" type="submit">Отправить</button>
-              <div class="contact-status" id="contactStatus" aria-live="polite"></div>
-            </form>
-          </div>
-        </div>
-      </div>`;
-    document.body.appendChild(modal);
-  }
-
-  const overlay = modal.querySelector("#contactOverlay");
-  const close = modal.querySelector("#contactClose");
-  const form = modal.querySelector("#contactForm");
-  const status = modal.querySelector("#contactStatus");
-  const submit = modal.querySelector("#contactSubmit");
-
-  // --- Показ / скрытие ---
-  const show = () => {
-    modal.style.display = "flex";
-    document.body.style.overflow = "hidden";
-  };
-  const hide = () => {
-    modal.style.display = "none";
-    document.body.style.overflow = "";
-    status.textContent = "";
-    status.className = "contact-status";
-    form.reset();
-    clearErrors();
+  const normalizeTel = (value) => {
+    if (!value) return "";
+    const trimmed = String(value).trim();
+    const hasPlus = trimmed.startsWith("+");
+    const digitsOnly = trimmed.replace(/[^\d]/g, "");
+    return (hasPlus ? "+" : "") + digitsOnly;
   };
 
-  // Клик по КНОПКАМ с классом (любое количество) — через делегирование
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest(`.${TRIGGER_CLASS}`);
-    if (btn) {
+  contactBtns.forEach((btn) => {
+    if (!btn) return;
+
+    btn.setAttribute("role", "link");
+    btn.setAttribute("tabindex", "0");
+
+    const rawTel =
+      btn.getAttribute("data-tel") ||
+      btn.getAttribute("href") ||
+      btn.textContent ||
+      DEFAULT_TEL;
+
+    const tel = normalizeTel(rawTel) || normalizeTel(DEFAULT_TEL);
+
+    const makeCall = () => {
+      window.location.href = `tel:${tel}`;
+    };
+
+    btn.addEventListener("click", (e) => {
       e.preventDefault();
-      show();
-    }
-  });
-  overlay.addEventListener("click", hide);
-  close.addEventListener("click", hide);
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal.style.display === "flex") hide();
-  });
-
-  // --- Валидация ---
-  const nameEl = form.querySelector("#cfName");
-  const phoneEl = form.querySelector("#cfPhone");
-
-  const err = {
-    name: document.getElementById("errName"),
-    phone: document.getElementById("errPhone"),
-  };
-
-  const rePhone = /^\+?[0-9\s()-]{7,}$/;
-
-  function clearErrors() {
-    Object.values(err).forEach((e) => (e.textContent = ""));
-    [nameEl, phoneEl].forEach((i) => i.classList.remove("input--error"));
-  }
-
-  function validate() {
-    clearErrors();
-    let ok = true;
-    if (nameEl.value.trim().length < 2) {
-      err.name.textContent = "Введите имя (минимум 2 символа).";
-      nameEl.classList.add("input--error");
-      ok = false;
-    }
-    if (phoneEl.value.trim() && !rePhone.test(phoneEl.value.trim())) {
-      err.phone.textContent = "Неверный формат телефона.";
-      phoneEl.classList.add("input--error");
-      ok = false;
-    }
-    return ok;
-  }
-
-  [nameEl, phoneEl].forEach((i) => {
-    i.addEventListener("blur", validate);
-    i.addEventListener("input", () => {
-      i.classList.remove("input--error");
-      validate();
+      makeCall();
     });
-  });
 
-  // --- Отправка на FormSubmit ---
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    if (!validate()) {
-      status.textContent = "Исправьте ошибки в форме.";
-      status.className = "contact-status contact-status--err";
-      return;
-    }
-
-    submit.disabled = true;
-    status.textContent = "Отправляем…";
-    status.className = "contact-status";
-
-    try {
-      const data = Object.fromEntries(new FormData(form));
-      const res = await fetch(FORMSUBMIT_ENDPOINT, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-      if (!res.ok) throw 0;
-
-      status.textContent = "Готово! Сообщение отправлено.";
-      status.className = "contact-status contact-status--ok";
-      submit.disabled = false; // ← разблокировать на успехе
-      setTimeout(hide, 1600);
-    } catch {
-      status.textContent = "Не получилось отправить. Попробуйте позже.";
-      status.className = "contact-status contact-status--err";
-      submit.disabled = false;
-    }
+    btn.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        makeCall();
+      }
+    });
   });
 });
 
