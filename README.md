@@ -32,4 +32,4 @@
 - метатеги обновить у страниц
 - LegalService + LocalBusiness <script type="application/ld+json">
 
-# Форма убрал
+# Форму обратной связи убрал из-за спама (временно)
