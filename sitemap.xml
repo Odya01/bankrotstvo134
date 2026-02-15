@@ -1,76 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Главная страница -->
+  <url>
+    <loc>https://банкротство134.рф/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
 
-<url>
-  <loc>https://банкротство134.рф/</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/index.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__bankrotstvo.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__s-ipotekoj.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__pensionerov.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__mobilizovannyh.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__poruchitelej.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__suprugov.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__umershego.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/page/article__vnesudebnaya.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/price.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/case.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://банкротство134.рф/reviews.html</loc>
-  <lastmod>2025-08-09T18:06:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <!-- О компании -->
+  <url>
+    <loc>https://банкротство134.рф/about/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 
+  <!-- Услуги -->
+  <url>
+    <loc>https://банкротство134.рф/uslugi/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Цены -->
+  <url>
+    <loc>https://банкротство134.рф/price/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Дела / Практика -->
+  <url>
+    <loc>https://банкротство134.рф/case/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Отзывы -->
+  <url>
+    <loc>https://банкротство134.рф/reviews/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://банкротство134.рф/faq/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Статьи (список) -->
+  <url>
+    <loc>https://банкротство134.рф/stati/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Статья: Банкротство -->
+  <url>
+    <loc>https://банкротство134.рф/stati/bankrotstvo/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Банкротство граждан под ключ -->
+  <url>
+    <loc>https://банкротство134.рф/stati/bankrotstvo-grazhdan-pod-klyuch/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Ипотека при банкротстве -->
+  <url>
+    <loc>https://банкротство134.рф/stati/ipoteka-pri-bankrotstve/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Банкротство для пенсионеров -->
+  <url>
+    <loc>https://банкротство134.рф/stati/bankrotstvo-dlya-pensionerov/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Банкротство для мобилизованных -->
+  <url>
+    <loc>https://банкротство134.рф/stati/bankrotstvo-dlya-mobilizovannyh/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Банкротство поручителей -->
+  <url>
+    <loc>https://банкротство134.рф/stati/bankrotstvo-poruchitelej/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Банкротство супругов -->
+  <url>
+    <loc>https://банкротство134.рф/stati/bankrotstvo-suprugov/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Банкротство умершего -->
+  <url>
+    <loc>https://банкротство134.рф/stati/bankrotstvo-umershego/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Внесудебное банкротство -->
+  <url>
+    <loc>https://банкротство134.рф/stati/vnesudebnoe-bankrotstvo/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Финансовый управляющий при банкротстве граждан -->
+  <url>
+    <loc>https://банкротство134.рф/stati/finansovyj-upravlyayushhij-pri-bankrotstve-grazhdan/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Сохранение имущества при банкротстве -->
+  <url>
+    <loc>https://банкротство134.рф/stati/sokhranenie-imushhestva-pri-bankrotstve/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Восстановление кредитного рейтинга -->
+  <url>
+    <loc>https://банкротство134.рф/stati/vosstanovlenie-kreditnogo-rejtinga/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Статья: Юридическое сопровождение процедуры банкротства -->
+  <url>
+    <loc>https://банкротство134.рф/stati/yuridicheskoe-soprovozhdenie-procedury-bankrotstva/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
 
 </urlset>
