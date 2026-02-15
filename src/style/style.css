@@ -2114,7 +2114,7 @@ header {
   justify-content: center;
 }
 
-.welcome_breadcrumbs__btn {
+.welcome_breadcrumbs__buttons .btn {
   flex: 1;
   min-width: 250px;
   max-width: 320px;
@@ -2214,6 +2214,10 @@ header {
 }
 
 .services__block-card .services__heading {
+  display: flex;
+  align-items: center;
+
+  min-height: 85px;
   margin: 0;
   font-size: 24px;
   margin-bottom: 18px;
@@ -2269,6 +2273,10 @@ header {
   padding-left: 8px;
 }
 
+.services__elementor-text {
+  text-align: center;
+}
+
 .services__block-btn {
   margin-top: auto;
   width: 100%;
@@ -2291,7 +2299,7 @@ header {
 .services__block-trust {
   background-color: var(--wh);
   border-radius: 20px;
-  padding: 45px 40px;
+  padding: 25px 40px;
   border: 2px solid var(--beige);
   margin-top: 50px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -2334,6 +2342,7 @@ header {
 
 .services__block-trust .services__links-list {
   margin: 0;
+  list-style-type: none;
   max-width: none;
   background: linear-gradient(135deg, #f8f9fa 0%, #f0f4f8 100%);
   border-left: 4px solid var(--blue);

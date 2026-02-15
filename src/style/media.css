@@ -147,7 +147,7 @@
 
   .services__heading-main,
   .services__heading-category {
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 30px;
   }
 
@@ -223,7 +223,8 @@
   .services__block-card:first-child .services__heading {
     font-size: 22px;
     padding-bottom: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    min-height: auto;
   }
 
   .services__block-card:first-child .services__block-btn {
