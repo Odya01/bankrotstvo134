@@ -2180,6 +2180,7 @@ header {
 .services__block-card:first-child .services__links-list {
   background-color: #f3f3f3;
   grid-column: 2;
+  list-style-type: none;
   border-radius: 10px;
   margin: 0;
   padding: 20px;
