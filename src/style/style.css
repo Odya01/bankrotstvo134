@@ -905,6 +905,7 @@ header {
 }
 
 .card__content {
+  flex: 1;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -2475,6 +2476,16 @@ table.cinereousTable tbody td {
   background: rgba(0, 0, 0, .5)
 }
 
+.contact-socials .contact-submit {
+  min-width: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+
 .contact-modal__dialog {
   position: relative;
   z-index: 1;
@@ -2603,5 +2614,16 @@ table.cinereousTable tbody td {
 @media (max-width:480px) {
   .contact-form__row {
     grid-template-columns: 1fr
+  }
+
+  .contact-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-socials .contact-submit {
+    min-width: auto;
+    width: 100%;
   }
 }

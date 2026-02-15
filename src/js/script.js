@@ -197,48 +197,218 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // modal form
+// нажатие на кнопку, как tel
+// document.addEventListener("DOMContentLoaded", () => {
+//   const contactBtns = document.querySelectorAll(".contactBtn");
+//   if (!contactBtns.length) return;
+
+//   const DEFAULT_TEL = "+79053309095";
+
+//   const normalizeTel = (value) => {
+//     if (!value) return "";
+//     const trimmed = String(value).trim();
+//     const hasPlus = trimmed.startsWith("+");
+//     const digitsOnly = trimmed.replace(/[^\d]/g, "");
+//     return (hasPlus ? "+" : "") + digitsOnly;
+//   };
+
+//   contactBtns.forEach((btn) => {
+//     if (!btn) return;
+
+//     btn.setAttribute("role", "link");
+//     btn.setAttribute("tabindex", "0");
+
+//     const rawTel =
+//       btn.getAttribute("data-tel") ||
+//       btn.getAttribute("href") ||
+//       btn.textContent ||
+//       DEFAULT_TEL;
+
+//     const tel = normalizeTel(rawTel) || normalizeTel(DEFAULT_TEL);
+
+//     const makeCall = () => {
+//       window.location.href = `tel:${tel}`;
+//     };
+
+//     btn.addEventListener("click", (e) => {
+//       e.preventDefault();
+//       makeCall();
+//     });
+
+//     btn.addEventListener("keydown", (e) => {
+//       if (e.key === "Enter" || e.key === " ") {
+//         e.preventDefault();
+//         makeCall();
+//       }
+//     });
+//   });
+// });
+
+/**
+ * Модальное окно контактов.
+ * Открывается по клику на элементы с классом .contactBtn.
+ * Номер телефона берётся из data-tel, href или текста кнопки.
+ * Для соцсетей используются стандартные ссылки (можно изменить в коде).
+ * Стили модального окна должны быть подключены отдельно (см. CSS в задании).
+ */
 document.addEventListener("DOMContentLoaded", () => {
-  const contactBtns = document.querySelectorAll(".contactBtn");
-  if (!contactBtns.length) return;
+  // Если модалка уже существует, не создаём повторно
+  if (document.getElementById("contactModal")) return;
 
-  const DEFAULT_TEL = "+79053309095";
+  // Дополнительные стили для расположения кнопок соцсетей
+  const style = document.createElement("style");
+  style.textContent = `
+    .contact-socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
 
-  const normalizeTel = (value) => {
+    }
+    .contact-socials .contact-submit {
+      min-width: 120px;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // ----- Создание структуры модалки -----
+  const modal = document.createElement("div");
+  modal.className = "contact-modal";
+  modal.id = "contactModal";
+
+  const overlay = document.createElement("div");
+  overlay.className = "contact-modal__overlay";
+
+  const dialog = document.createElement("div");
+  dialog.className = "contact-modal__dialog";
+
+  const closeBtn = document.createElement("button");
+  closeBtn.className = "contact-modal__close";
+  closeBtn.innerHTML = "&times;";
+  closeBtn.setAttribute("aria-label", "Закрыть");
+
+  const dottedDiv = document.createElement("div");
+  dottedDiv.className = "dotted-div";
+
+  const title = document.createElement("h3");
+  title.className = "contact-modal__title";
+  title.textContent = "Свяжитесь с нами";
+
+  const subtitle = document.createElement("p");
+  subtitle.className = "contact-modal__subtitle";
+  subtitle.textContent = "Выберите удобный способ связи";
+
+  // Блок с телефоном (будет обновляться при открытии)
+  const phoneContainer = document.createElement("p");
+  phoneContainer.innerHTML =
+    'Телефон: <a href="tel:+79053309095" class="contact-phone-link">+7 (905) 330-90-95</a>';
+  phoneContainer.style.marginBottom = "10px";
+  phoneContainer.style.marginTop = "0px";
+  phoneContainer.style.textAlign = "center";
+
+  // Контейнер для кнопок соцсетей
+  const socialsContainer = document.createElement("div");
+  socialsContainer.className = "contact-socials";
+
+  // Дефолтные ссылки для соцсетей (пользователь может заменить)
+  const defaultSocials = {
+    telegram: "http://t.me/bankrotstvo134",
+    whatsapp:
+      "https://wa.me/79053309095?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D1%81%D1%82%D0%B2%D0%BE.",
+    vk: "https://vk.com/bankrotstvo_134",
+  };
+
+  // Функция создания кнопки соцсети
+  function createSocialButton(name, label, url) {
+    const btn = document.createElement("button");
+    btn.className = "contact-submit btn";
+    btn.setAttribute("data-social", name);
+    btn.setAttribute("aria-label", label);
+    // Внутри span — пользователь заменит текст на свою SVG
+    btn.innerHTML = `<span>${label}</span>`;
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.open(url, "_blank");
+    });
+    return btn;
+  }
+
+  // Добавляем кнопки
+  socialsContainer.appendChild(
+    createSocialButton("telegram", "Telegram", defaultSocials.telegram),
+  );
+  socialsContainer.appendChild(
+    createSocialButton("vk", "VK", defaultSocials.vk),
+  );
+  socialsContainer.appendChild(
+    createSocialButton("whatsapp", "WhatsApp", defaultSocials.whatsapp),
+  );
+
+  // Сборка
+  dottedDiv.appendChild(title);
+  dottedDiv.appendChild(subtitle);
+  dottedDiv.appendChild(phoneContainer);
+  dottedDiv.appendChild(socialsContainer);
+
+  dialog.appendChild(closeBtn);
+  dialog.appendChild(dottedDiv);
+
+  modal.appendChild(overlay);
+  modal.appendChild(dialog);
+
+  document.body.appendChild(modal);
+
+  // ----- Логика открытия / закрытия -----
+  function openModal(phoneDigits = "79053309095") {
+    // Форматируем номер для отображения
+    const phoneLink = phoneContainer.querySelector(".contact-phone-link");
+    if (phoneLink) {
+      let formatted = phoneDigits;
+      if (phoneDigits.length === 11 && phoneDigits[0] === "7") {
+        formatted = `+7 (${phoneDigits.slice(1, 4)}) ${phoneDigits.slice(4, 7)}-${phoneDigits.slice(7, 9)}-${phoneDigits.slice(9)}`;
+      } else if (phoneDigits.length === 10) {
+        formatted = `+7 (${phoneDigits.slice(0, 3)}) ${phoneDigits.slice(3, 6)}-${phoneDigits.slice(6, 8)}-${phoneDigits.slice(8)}`;
+      } else {
+        formatted = `+${phoneDigits}`;
+      }
+      phoneLink.textContent = formatted;
+      phoneLink.href = `tel:${phoneDigits}`;
+    }
+    modal.style.display = "flex";
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+      closeModal();
+    }
+  });
+
+  function normalizeTel(value) {
     if (!value) return "";
     const trimmed = String(value).trim();
     const hasPlus = trimmed.startsWith("+");
     const digitsOnly = trimmed.replace(/[^\d]/g, "");
     return (hasPlus ? "+" : "") + digitsOnly;
-  };
+  }
 
-  contactBtns.forEach((btn) => {
-    if (!btn) return;
+  const DEFAULT_TEL = "+79053309095";
 
-    btn.setAttribute("role", "link");
-    btn.setAttribute("tabindex", "0");
-
-    const rawTel =
-      btn.getAttribute("data-tel") ||
-      btn.getAttribute("href") ||
-      btn.textContent ||
-      DEFAULT_TEL;
-
-    const tel = normalizeTel(rawTel) || normalizeTel(DEFAULT_TEL);
-
-    const makeCall = () => {
-      window.location.href = `tel:${tel}`;
-    };
-
+  document.querySelectorAll(".contactBtn").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      makeCall();
-    });
-
-    btn.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        makeCall();
-      }
+      const rawTel =
+        btn.getAttribute("data-tel") ||
+        btn.getAttribute("href") ||
+        btn.textContent ||
+        DEFAULT_TEL;
+      const tel = normalizeTel(rawTel) || normalizeTel(DEFAULT_TEL);
+      openModal(tel.replace(/\D/g, "")); // передаём только цифры
     });
   });
 });
@@ -918,7 +1088,7 @@ document.addEventListener("DOMContentLoaded", () => {
         caseElement.classList.add("case__item");
         caseElement.setAttribute(
           "data-year",
-          cases.find((c) => c.caseNumber === caseNumber)?.year || ""
+          cases.find((c) => c.caseNumber === caseNumber)?.year || "",
         );
 
         // Используем правильный путь относительно case/index.html
@@ -939,7 +1109,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
         casesContainer.appendChild(caseElement);
-      }
+      },
     );
 
     // Инициализация viewer для новых изображений
