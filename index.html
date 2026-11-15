@@ -138,9 +138,7 @@
       <div class="container">
         <div class="header__address">
           <div class="name__org">
-            <a href="index.html" class="header__link-address">
-              Банкротство-134
-            </a>
+            <a href="./" class="header__link-address"> Банкротство-134 </a>
             <a
               href="https://yandex.ru/maps/-/CHTqi0P-"
               class="header__map-address"
@@ -274,7 +272,18 @@
               <a href="uslugi/" class="nav__list">Услуги</a>
               <a href="price/" class="nav__list">Цены</a>
               <a href="case/" class="nav__list">Примеры дел</a>
-              <a href="stati/" class="nav__list">Статьи</a>
+              <div class="has-submenu">
+                <span class="nav__list navbar__link">
+                  Статьи
+                  <span class="submenu__icon" aria-hidden="true"></span>
+                </span>
+                <ul class="dropdown">
+                  <div class="dotted-div">
+                    <li><a href="stati/">По услугам</a></li>
+                    <li><a href="novosti/">Новости</a></li>
+                  </div>
+                </ul>
+              </div>
               <a href="reviews/" class="nav__list">Отзывы</a>
               <a href="faq/" class="nav__list">Вопросы и ответы</a>
               <a href="about/" class="nav__list">Обо мне</a>
@@ -291,7 +300,16 @@
               <a href="uslugi/" class="nav__list">Услуги</a>
               <a href="price/" class="nav__list">Цены</a>
               <a href="case/" class="nav__list">Примеры дел</a>
-              <a href="stati/" class="nav__list">Статьи</a>
+              <div class="nav__drop_item has-submenu">
+                <button class="nav__toggle" type="button">
+                  Статьи
+                  <span class="nav__burger_arrow" aria-hidden="true"></span>
+                </button>
+                <div class="nav__dropdown">
+                  <a href="stati/">По услугам</a>
+                  <a href="novosti/">Новости</a>
+                </div>
+              </div>
               <a href="reviews/" class="nav__list">Отзывы</a>
               <a href="faq/" class="nav__list">Вопросы и ответы</a>
               <a href="about/" class="nav__list">Обо мне</a>
@@ -336,7 +354,7 @@
                       alt="check icon"
                       class="header__check-img"
                     />
-                    Спишем все кредиты и займы до 0 рублей с гарантией
+                    Законно избавим от кредитов и займов
                   </li>
                   <li class="header__list">
                     <img
@@ -344,7 +362,7 @@
                       alt="check icon"
                       class="header__check-img"
                     />
-                    Сохраним всё имущество
+                    Защитим ваше имущество по закону
                   </li>
                   <li class="header__list">
                     <img

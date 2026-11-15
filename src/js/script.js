@@ -994,6 +994,15 @@ document.addEventListener("DOMContentLoaded", () => {
       year: 2025,
     },
     {
+      caseNumber: "A12-11577-2025",
+      folderName: "A12-115772025",
+      pdfName: "A12-11577-2025_20260216_Opredelenie",
+      imageName: "A12-11577-2025_20260216_Opredelenie_Страница1.png",
+      caseLink:
+        "https://kad.arbitr.ru/Card/925c6d9e-e125-4142-ba91-068e49aff700",
+      year: 2025,
+    },
+    {
       caseNumber: "А12-4979-2024",
       folderName: "А12-49792024",
       pdfName: "A12-4979-2024_20241030_Opredelenie",
