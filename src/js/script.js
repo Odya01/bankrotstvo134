@@ -541,7 +541,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-12122-2023_20250304_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/8aa9735a-d747-42a5-a443-fd9123e48294",
-      year: 2023,
+      year: 2025,
     },
     {
       caseNumber: "А12-12192-2023",
@@ -550,7 +550,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-12192-2023_20240424_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/23008936-83bb-403a-94fe-3019b9aaf25c",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-13133-2023",
@@ -559,7 +559,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-13133-2023_20240807_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/a89f602a-f1ba-4ada-9a2c-f9052cd04d39",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-13302-2024",
@@ -568,7 +568,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-13302-2024_20250415_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/a5607c31-4faa-4790-821a-f27f6b8f4d03",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-14573-2023",
@@ -577,7 +577,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-14573-2023_20240701_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/7dbba25b-0784-4e59-8fb5-371ba92a0ccf",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-14648-2023",
@@ -586,7 +586,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-14648-2023_20240801_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/dc92eff2-635d-46f3-b989-ddc01accdca4",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-14671-2023",
@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-14671-2023_20240411_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/4640e410-c8cf-4092-8589-80bfc1f24330",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-14986-2024",
@@ -604,7 +604,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-14986-2024_20251031_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/1924df72-9571-44bd-a78c-fe68d443e376",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-15007-2022",
@@ -613,7 +613,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-15007-2022_20241204_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/ceddcd9a-6ee1-4c78-9d0c-c3e3cd96e834",
-      year: 2022,
+      year: 2024,
     },
     {
       caseNumber: "А12-15586-2023",
@@ -622,7 +622,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-15586-2023_20240221_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/9fb295a4-afba-4606-b950-fa7f7e08c802",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-15742-2023",
@@ -631,7 +631,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-15742-2023_20240122_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/0ab92846-1017-456d-8266-e9b9e3976b90",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-16032-2024",
@@ -640,7 +640,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-16032-2024_20250120_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/6fecef7c-2104-4c49-ac80-0a756debefa3",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-16934-2023",
@@ -649,7 +649,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-16934-2023_20240320_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/7089091b-2c1b-456a-b1db-dbf389aebe70",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-17416-2024",
@@ -658,7 +658,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-17416-2024_20250611_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/0331e5b3-7015-4362-95b0-81bd59ba24be",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-17716-2023",
@@ -667,7 +667,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-17716-2023_20241118_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/8328ca21-3481-4f5f-9a04-55a783283b62",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-17764-2023",
@@ -676,7 +676,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-17764-2023_20240521_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/6e6b4756-bf48-439c-8823-5787848d5cc9",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-19245-2022",
@@ -694,7 +694,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-1974-2024_20250224_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/0c9feb54-150c-4aa9-8063-f89e38120f13",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-21003-2023",
@@ -703,7 +703,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-21003-2023_20240422_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/139d3552-a171-43a2-802b-62c25325a48b",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-21140-2024",
@@ -712,7 +712,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-21140-2024_20250415_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/fcc7e058-90d4-422d-aa17-46b8e7458d2b",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-23080-2024",
@@ -721,7 +721,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-23080-2024_20250403_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/7931ddd0-3aa9-4942-982a-d2f3c3ed3801",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-23855-2023",
@@ -730,7 +730,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-23855-2023_20240730_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/ec048e9c-06d2-4ef6-9f58-cca274935b5b",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-25326-2022",
@@ -748,7 +748,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-2538-2023_20241224_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/f9a48661-b122-4950-947a-2aa25f37049a",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-26104-2022",
@@ -766,7 +766,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-26336-2024_20250424_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/eeb34306-7b37-455d-bc18-4cabbea0c2b8",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-27143-2023",
@@ -775,7 +775,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-27143-2023_20250915_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/e411ffdd-ed1e-48a0-980f-d3b6348b64b4",
-      year: 2023,
+      year: 2025,
     },
     {
       caseNumber: "А12-27987-2024",
@@ -784,7 +784,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-27987-2024_20250626_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/ab90bb0e-3159-463d-9479-304378d7cb34",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-28691-2024",
@@ -793,7 +793,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-28691-2024_20251007_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/8cf4bb74-772c-47ba-a8ab-b6a4ef26678e",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-29897-2021",
@@ -802,7 +802,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-29897-2021_20231128_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/3bb6b4cd-7f61-4e86-8c27-ca2c2ba7c48d",
-      year: 2021,
+      year: 2023,
     },
     {
       caseNumber: "А12-3048-2024",
@@ -811,7 +811,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-3048-2024_20250206_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/654ea52c-1f99-44ed-a824-ebab33a9cbb9",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-30624-2022",
@@ -829,7 +829,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-31104-2024_20250930_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/e73cca70-58bc-499f-95cf-fbd0000e5048",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-31473-2024",
@@ -838,7 +838,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-31473-2024_20250807_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/c4a1a2d0-64a5-433e-8a54-5581b3e13d94",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-31752-2023",
@@ -847,7 +847,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-31752-2023_20250311_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/1dd510a6-4dd2-4d68-b12f-3283c5f84e2f",
-      year: 2023,
+      year: 2025,
     },
     {
       caseNumber: "А12-32439-2023",
@@ -856,7 +856,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-32439-2023_20241029_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/5b21070e-282e-4db4-9709-b3c74c213dba",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-32443-2023",
@@ -865,7 +865,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-32443-2023_20240926_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/329dda08-7ebf-44c8-9936-f53e58120506",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-33206-2023",
@@ -874,7 +874,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-33206-2023_20241028_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/0d5f2157-f394-489e-8cbf-88b11fa2e6e2",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-33693-2022",
@@ -901,7 +901,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-3749-2023_20240524_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/dbf0b553-8dd5-4100-8d41-b868497b80d5",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-3750-2023",
@@ -928,7 +928,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-3858-2023_20240123_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/7aa8fbf9-ba71-4809-94ee-4a9bd350669a",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-3860-2023",
@@ -946,7 +946,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-3887-2023_20240912_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/4f1159de-4431-4b5d-a5e1-90315beb3376",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-3891-2023",
@@ -955,7 +955,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-3891-2023_20240711_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/5175b19b-65c7-4cd7-bb71-48a8f05273e6",
-      year: 2023,
+      year: 2024,
     },
     {
       caseNumber: "А12-4126-2025",
@@ -1000,7 +1000,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-11577-2025_20260216_Opredelenie_Страница1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/925c6d9e-e125-4142-ba91-068e49aff700",
-      year: 2025,
+      year: 2026,
     },
     {
       caseNumber: "А12-4979-2024",
@@ -1045,7 +1045,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-6570-2024_20250114_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/eb220313-8309-4aab-b5c6-520efee42858",
-      year: 2024,
+      year: 2025,
     },
     {
       caseNumber: "А12-7053-2021",
@@ -1054,7 +1054,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A12-7053-2021_20250218_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/e9ee3fe9-bbec-4d49-bb82-0a1c1e83b45c",
-      year: 2021,
+      year: 2025,
     },
     {
       caseNumber: "А66-4593-2022",
@@ -1072,7 +1072,97 @@ document.addEventListener("DOMContentLoaded", () => {
       imageName: "A66-9117-2023_20240524_Opredelenie_Страница_1.png",
       caseLink:
         "https://kad.arbitr.ru/Card/09906b44-1898-4fce-865c-c07d94b48649",
-      year: 2023,
+      year: 2024,
+    },
+    {
+      caseNumber: "А12-5073-2025",
+      folderName: "A12-5073-2025",
+      pdfName: "A12-5073-2025_20260406_Opredelenie",
+      imageName: "A12-5073-2025_20260406_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/939bbf29-3a1a-4539-bdd3-93e79217a68f",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-10601-2025",
+      folderName: "A12-10601-2025",
+      pdfName: "A12-10601-2025_20251215_Opredelenie",
+      imageName: "A12-10601-2025_20251215_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/06c6f5c0-eb60-410e-9796-924a19089251",
+      year: 2025,
+    },
+    {
+      caseNumber: "А12-10977-2025",
+      folderName: "A12-10977-2025",
+      pdfName: "A12-10977-2025_20260115_Opredelenie",
+      imageName: "A12-10977-2025_20260115_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/d5015da1-f2a2-49de-afe1-7e3086658daf",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-12441-2025",
+      folderName: "A12-12441-2025",
+      pdfName: "A12-12441-2025_20260619_Opredelenie",
+      imageName: "A12-12441-2025_20260619_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/c330570e-4c79-438b-a3a1-4856db686691",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-13303-2024",
+      folderName: "A12-13303-2024",
+      pdfName: "A12-13303-2024_20260824_Opredelenie",
+      imageName: "A12-13303-2024_20260824_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/ccaf1249-402f-4fdd-a5f5-c98e86748cc2",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-194-2026",
+      folderName: "А12-194-2026",
+      pdfName: "A12-194-2026_20261026_Opredelenie",
+      imageName: "A12-194-2026_20261026_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/f6d9ddec-2e49-4298-8c2a-9d8d2dda8532",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-22817-2025",
+      folderName: "A12-22817-2025",
+      pdfName: "A12-22817-2025_20260618_Opredelenie (1)",
+      imageName: "A12-22817-2025_20260618_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/5170e779-ed3b-41a4-afb1-c1f6dbd7f59c",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-23379-2025",
+      folderName: "A12-23379-2025",
+      pdfName: "A12-23379-2025_20261116_Opredelenie",
+      imageName: "A12-23379-2025_20261116_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/7f0d6d8d-7fc8-42bc-8cbd-ac0c4d0a823f",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-29755-2025",
+      folderName: "A12-29755-2025",
+      pdfName: "A12-29755-2025_20260721_Opredelenie",
+      imageName: "A12-29755-2025_20260721_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/57331bda-1c43-4c3e-aea6-7c5a6f33334b",
+      year: 2026,
+    },
+    {
+      caseNumber: "А12-34251-2025",
+      folderName: "A12-34251-2025",
+      pdfName: "A12-34251-2025_20261102_Opredelenie",
+      imageName: "A12-34251-2025_20261102_Opredelenie_Страница_1.jpg",
+      caseLink:
+        "https://kad.arbitr.ru/Card/9b63d434-b8e3-4f79-8cc5-5eeb8c2c73a9",
+      year: 2026,
     },
   ];
 
